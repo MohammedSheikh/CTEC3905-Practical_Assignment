@@ -1,4 +1,49 @@
-body{
-  background-color: pink;
-  font-size: 39px;
+/* GLOBAL AND MOBILE STYLES FIRST */
+
+body {
+  background-color: silver;
+  font-size: 19px;
 }
+nav {
+  display:none;
+}
+nav a {
+  padding: 1em;
+  display: block;
+}
+#mainMenu {
+  display:block;
+}
+.displayMenu {
+  display: block;
+}
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+  nav a {
+    width: 10%;
+    display: inline-block;
+  }
+  main {
+    width: 20%;
+    margin: 0 auto;
+  }
+
+}
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+  nav {
+    display: block;
+  }
+  nav a {
+    line-height: 3em;
+    width: inherit;
+  }
+  #mainMenu {
+    display: none;
+  }
+}
+/* END SECOND BREAKPOINT */
