@@ -3,6 +3,7 @@
 body {
   background-color: silver;
   font-size: 19px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 nav {
   display:none;
@@ -28,6 +29,10 @@ nav a {
     width: 20%;
     margin: 0 auto;
   }
+  
+  body{
+	background-color:green;
+  }
 
 }
 /* END FIRST BREAKPOINT */
@@ -44,6 +49,9 @@ nav a {
   }
   #mainMenu {
     display: none;
+  }
+  body{
+	background-color:pink;  
   }
 }
 /* END SECOND BREAKPOINT */
