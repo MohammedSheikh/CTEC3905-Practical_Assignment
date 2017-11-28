@@ -1,3 +1,5 @@
+"use strict";
+
 (function(){
 
   let menuButton = document.getElementById("mainMenu");
