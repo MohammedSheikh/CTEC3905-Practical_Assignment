@@ -1,5 +1,4 @@
 # CTEC3905-Practical_Assignment
-Repository for the practical assignment for the Front-End Web Development module
 
 # Intro 
 
@@ -15,13 +14,17 @@ Coming soon...
 
 # Usability and Information Architecture
 
-Coming soon...
+I initially sketeched out my ideas with pen and paper to map out a plan of my website in all the screen sizes (mobile, tablet and desktop).
 
-#Testing
+I want to make the website very easy for people to use by minimizing the cognitive load by structuring content intelligently.
 
-Coming soon...
+I aim to support accessibility features for users with disabilities.
 
-#References and Inspirations
+# Testing
+
+I aim to have my website tested by friends/family so that I can improve it as best as possible.
+
+# References and Inspirations
 
 Coming soon...
 
