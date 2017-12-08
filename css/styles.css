@@ -17,11 +17,13 @@ nav a {
 .display-menu {
   display: block;
 }
+/*styles for site logo div*/
 #logo {
   width:500px;
   height: 140px;
   background-color: blue;
 }
+/*styles for actual site logo*/
 #logo img {
   width:38%;
   height:100%;

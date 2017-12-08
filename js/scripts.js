@@ -1,15 +1,17 @@
-//This line of code defines that the JS should be executed strictly, so it will
-//allow only certain code
+/*This line of code defines that the JS should be executed strictly, so it will
+allow only certain code*/
 "use strict";
 
+/*Immediately Invoked Function Expression (IFFE)*/
 (function(){
 
   let menuButton = document.getElementById("main-menu");
   let navMenu = document.getElementById("nav-menu");
 
+  /*When the menu button is clicked, the 'toggleMenu' function should execute*/
   menuButton.addEventListener("click", toggleMenu);
 
-  let toggle = false; // hidden at first
+  let toggle = false; // the 'menu' button hidden at first
   function toggleMenu(){
     if (toggle) { // if menu is visible...
       navMenu.classList.remove("display-menu"), // ...hide the menu
