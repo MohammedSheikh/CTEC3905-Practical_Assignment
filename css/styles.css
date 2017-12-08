@@ -1,5 +1,4 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
-
 body {
   background-color: silver;
   font-size: 19px;
@@ -12,41 +11,38 @@ nav a {
   padding: 1em;
   display: block;
 }
-#mainMenu {
+#main-menu {
   display:block;
 }
-.displayMenu {
+.display-menu {
   display: block;
 }
-
 #logo {
-  width:275px;
-  margin-top:-30px;
+  width:500px;
+  height: 140px;
+  background-color: blue;
 }
-
 #logo img {
-  max-width:30%;  
+  width:38%;
+  height:100%;
   text-align:left;
+  margin-top:5px;
 }
-
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   nav a {
     width: 10%;
     display: inline-block;
   }
-  
   main {
     width: 20%;
     margin: 0 auto;
   }
-  
-  body{
+  body {
 	background-color:green;
   }
 }
 /* END FIRST BREAKPOINT */
-
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
@@ -57,12 +53,11 @@ nav a {
     line-height: 3em;
     width: inherit;
   }
-  
-  #mainMenu {
+  #main-menu {
     display: none;
   }
-  body{
-	background-color:pink;  
+  body {
+	background-color:pink;
   }
 }
 /* END SECOND BREAKPOINT */
