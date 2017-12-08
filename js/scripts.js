@@ -2,7 +2,8 @@
 allow only certain code*/
 "use strict";
 
-/*Immediately Invoked Function Expression (IFFE)*/
+/*Immediately Invoked Function Expression (IFFE).
+This IFFE function runs itself immediately*/
 (function(){
 
   let menuButton = document.getElementById("main-menu");
