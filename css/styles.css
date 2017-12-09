@@ -11,6 +11,20 @@ nav a {
   padding: 1em;
   display: block;
 }
+header{
+  width:100%;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: brown;
+  display:flex;
+  justify-content: space-around;
+}
+footer{
+  width:100%;
+  background-color: purple;
+  margin-left:auto;
+  margin-right: auto;
+}
 #main-menu {
   display:block;
 }
@@ -19,19 +33,32 @@ nav a {
 }
 /*styles for site logo div*/
 #logo {
-  width:500px;
   height: 140px;
   background-color: blue;
 }
 /*styles for actual site logo*/
 #logo img {
-  width:38%;
   height:100%;
   text-align:left;
   margin-top:5px;
 }
+#search{
+  background-color: grey;
+  width:20%;
+  align-items:baseline;
+}
+#search img{
+  width:25px;
+}
+
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
+  header{
+    width:95%;
+  }
+  footer{
+    width:95%;
+  }
   nav a {
     width: 10%;
     display: inline-block;
@@ -48,6 +75,13 @@ nav a {
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
+  header{
+    width:90%;
+  }
+  footer{
+    width:90%;
+    background-color: purple;
+  }
   nav {
     display: block;
   }
