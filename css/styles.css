@@ -37,6 +37,11 @@ main img{
 section{
   width:100%;
 }
+#map{
+  width:100%;
+  background-color: grey;
+  height: 200px;
+}
 footer{
   width:100%;
   background-color: purple;
