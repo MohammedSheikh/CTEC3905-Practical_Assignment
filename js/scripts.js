@@ -25,3 +25,31 @@ This IFFE function runs itself immediately*/
   }
 
 })();
+
+//function that implements Google Maps API into the website
+function initMap() {
+  //the latitude and logitude of the location
+  let audiOffice = {lat: 52.070469, lng: -0.737313};
+
+  //get the HTML id of the map on the webpage
+  let audiMap = document.getElementById("map");
+
+  // this sets the default location for when the map is first loaded
+  let map = new google.maps.Map(audiMap, {
+    zoom: 10,
+    center: audiOffice
+  });
+
+  //marker on map
+  let markerAudi = new google.maps.Marker({
+    position: audiOffice,
+    map: map
+  });
+
+  //displays information regarding the map marker
+  var locationInfo = new google.maps.InfoWindow({
+    content: "Audi UK Headquarters"
+  });
+
+  locationInfo.open(audiMap, markerAudi);
+}
