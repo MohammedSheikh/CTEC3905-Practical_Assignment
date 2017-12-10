@@ -37,6 +37,11 @@ main img{
 section{
   width:100%;
 }
+#videos{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+}
 #map{
   width:100%;
   background-color: grey;
