@@ -26,27 +26,30 @@ This IFFE function runs itself immediately*/
 
 })();
 
+//function that implements Google Maps API into the website
 function initMap() {
-  let leicester = {lat: 52.6333, lng: -1.1333};
-  let dmu = {lat: 52.629311, lng: -1.137836};
-  let uol = {lat: 52.620956, lng: -1.124049};
-  let mapDemo = document.getElementById("map");
+  //the latitude and logitude of the location
+  let audiOffice = {lat: 52.070469, lng: -0.737313};
+
+  //get the HTML id of the map on the webpage
+  let audiMap = document.getElementById("map");
 
   // this sets the default location for when the map is first loaded
-  let map = new google.maps.Map(mapDemo, {
-    zoom: 13,
-    center: leicester
+  let map = new google.maps.Map(audiMap, {
+    zoom: 10,
+    center: audiOffice
   });
 
-  // these set different markers you want to show on your map
-  let markerDMU = new google.maps.Marker({
-    position: dmu,
-    map: map,
-    title: 'The Good Guys'
+  //marker on map
+  let markerAudi = new google.maps.Marker({
+    position: audiOffice,
+    map: map
   });
-  let markerUoL = new google.maps.Marker({
-    position: uol,
-    map: map,
-    title: 'The Bad Guys'
+
+  //displays information regarding the map marker
+  var locationInfo = new google.maps.InfoWindow({
+    content: "Audi UK Headquarters"
   });
+
+  locationInfo.open(audiMap, markerAudi);
 }
