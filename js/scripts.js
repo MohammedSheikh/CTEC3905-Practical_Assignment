@@ -48,8 +48,8 @@ function initMap() {
   });
 
   //displays information regarding the map marker
-  var locationInfo = new google.maps.InfoWindow({
-    content: "Audi UK Headquarters"
+  let locationInfo = new google.maps.InfoWindow({
+    content: "<b>Audi UK Headquarters</b> <p> Yeomans Drive Blakelands <p> MILTON KEYNES <p> MK14 5AN"
   });
 
   locationInfo.open(audiMap, markerAudi);
@@ -57,8 +57,9 @@ function initMap() {
   /*Here I have added a DOM listener that 'listens' when window is resized.
   I have added this as the center marker was staying in same place when I was
   resizing window, code used from: https://gist.github.com/toddmotto/5477991*/
+  
   google.maps.event.addDomListener(window, 'resize', function() {
-    var center = map.getCenter()
+    let center = map.getCenter()
     google.maps.event.trigger(map, "resize")
     map.setCenter(center)
   })

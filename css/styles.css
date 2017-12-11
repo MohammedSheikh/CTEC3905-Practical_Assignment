@@ -41,11 +41,18 @@ section{
   width:100%;
   display:flex;
   justify-content: space-around;
+  flex-direction:column;
 }
 #map{
   width:100%;
   background-color: grey;
   height: 400px;
+}
+#first-video{
+	background-color:green;
+}
+#second-video{
+	background-color:yellow;
 }
 footer{
   width:100%;
@@ -120,13 +127,15 @@ footer{
   }
   nav a {
     line-height: 3em;
-
   }
   #main-menu {
     display: none;
   }
   main{
     width:90%;
+  }
+  #videos{
+	flex-direction:row;
   }
   body {
 	background-color:pink;
