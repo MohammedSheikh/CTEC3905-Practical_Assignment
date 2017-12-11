@@ -6,20 +6,19 @@ body {
 }
 nav {
   display:none;
-  background-color: orange;
+  background-color: grey;
   text-align: center;
 }
 nav a {
   padding: 1em;
   display: block;
   text-align: center;
-  background-color: #ff0000;
+  background-color: silver;
+  color:white;
 }
 /*styles for site logo div*/
 #logo {
   height: 50%;
-
-
 
   max-width:200px;
 }
@@ -27,7 +26,7 @@ nav a {
 #logo img {
   height:100%;
   width:100%;
-
+  margin-top: 5px;
 }
 #search{
 	width:60%;
@@ -39,24 +38,24 @@ nav a {
 .search-bar {
   display:none;
   width: 80%;
-  border: 3px solid #00B4CC;
+  border: 3px solid grey;
   padding: 5px;
   margin-top: 20px;
   height: 20px;
   border-radius: 5px;
-  color: #9DBFAF;
+  color: #000;
 }
 .search-bar:focus{
-  color: #00B4CC;
+  color: #000;
 }
 .search-button {
   position: absolute;
   width: 40px;
   height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
+  border: 1px solid #grey;
+  background: grey;
   text-align: center;
-  color: #fff;
+  color: grey;
   border-radius: 5px;
   font-size: 20px;
   margin-top: 10%;
@@ -79,12 +78,13 @@ header{
   width:100%;
   margin-left:auto;
   margin-right: auto;
-  background-color: brown;
+  background-color: #000;
   display:flex;
   justify-content: space-around;
+  color:#fff;
 }
 main{
-  background-color: white;
+  background-color: grey;
   margin-top:5px;
   width:100%;
   margin-left:auto;
@@ -113,14 +113,14 @@ iframe {
   height: 400px;
 }
 #first-video{
-	background-color:green;
+	background-color:silver;
 }
 #second-video{
-	background-color:yellow;
+	background-color:silver;
 }
 footer{
   width:100%;
-  background-color: purple;
+  background-color: #000;
   margin-left:auto;
   margin-right: auto;
   margin-top:5px;
@@ -128,6 +128,7 @@ footer{
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  color:#fff;
 }
 #main-menu {
   display:block;
@@ -177,7 +178,7 @@ footer{
     padding: 5px;
   }
   body {
-	background-color:green;
+	background-color:silver;
   }
 }
 /* END FIRST BREAKPOINT */
@@ -189,7 +190,6 @@ footer{
   }
   footer{
     width:90%;
-    background-color: purple;
   }
   nav {
     display: block;
@@ -233,7 +233,7 @@ footer{
     margin-top: 20px;
   }
   body {
-	background-color:pink;
+	background-color:silver;
   }
   footer{
     flex-direction: row;
