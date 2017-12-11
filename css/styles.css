@@ -41,6 +41,7 @@ nav a {
   width: 80%;
   border: 3px solid #00B4CC;
   padding: 5px;
+  margin-top: 20px;
   height: 20px;
   border-radius: 5px;
   color: #9DBFAF;
@@ -58,6 +59,7 @@ nav a {
   color: #fff;
   border-radius: 5px;
   font-size: 20px;
+  margin-top: 10%;
 }
 /*The class that handles the search bar icon*/
 .icon {
@@ -160,6 +162,10 @@ footer{
   .search-bar{
     display:inline;
   }
+  .search-button{
+    right:13px;
+    margin-top: 20px;
+  }
 
   body {
 	background-color:green;
@@ -196,6 +202,15 @@ footer{
 	flex-direction:row;
   }
 
+  .search-bar{
+    width:60%;
+    margin-right: 20%;
+  }
+
+  .search-button{
+    right:28%;
+    margin-top: 20px;
+  }
   body {
 	background-color:pink;
   }
