@@ -63,13 +63,10 @@ nav a {
 }
 #social-media{
   background-color: grey;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
 }
 #social-media img{
-  width:100px;
-  height:100px;
+  width:40px;
+  height:40px;
 
 }
 header{
@@ -121,6 +118,10 @@ footer{
   margin-left:auto;
   margin-right: auto;
   margin-top:5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 #main-menu {
   display:block;
@@ -150,10 +151,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
-  #social-media{
-    flex-direction: row;
-    justify-content: space-around;
-  }
+
   body {
 	background-color:green;
   }
@@ -187,12 +185,13 @@ footer{
   #videos{
 	flex-direction:row;
   }
-  #social-media{
-    flex-direction: row;
-    justify-content: space-around;
-  }
+
   body {
 	background-color:pink;
+  }
+  footer{
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 /* END SECOND BREAKPOINT */
