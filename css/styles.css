@@ -15,11 +15,25 @@ nav a {
   text-align: center;
   background-color: #ff0000;
 }
-#search{
-	width:100%;
-	position:relative;
+/*styles for site logo div*/
+#logo {
+  height: 140px;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.searchTerm {
+/*styles for actual site logo*/
+#logo img {
+  height:90%;
+}
+#search{
+	width:20%;
+	position:relative;
+  align-items:baseline;
+  background-color: grey;
+}
+.search-term {
   float: left;
   width: 100%;
   border: 3px solid #00B4CC;
@@ -29,12 +43,10 @@ nav a {
   outline: none;
   color: #9DBFAF;
 }
-
-.searchTerm:focus{
+.search-term:focus{
   color: #00B4CC;
 }
-
-.searchButton {
+.search-button {
   position: absolute;
   right: -50px;
   width: 40px;
@@ -104,25 +116,6 @@ footer{
 }
 .display-menu {
   display: block;
-}
-/*styles for site logo div*/
-#logo {
-  height: 140px;
-  background-color: blue;
-}
-/*styles for actual site logo*/
-#logo img {
-  height:100%;
-  text-align:left;
-  margin-top:5px;
-}
-#search{
-  background-color: grey;
-  width:20%;
-  align-items:baseline;
-}
-#search img{
-  width:25px;
 }
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
