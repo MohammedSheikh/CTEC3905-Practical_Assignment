@@ -17,23 +17,27 @@ nav a {
 }
 /*styles for site logo div*/
 #logo {
-  height: 140px;
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  height: 50%;
+
+
+
+  max-width:200px;
 }
 /*styles for actual site logo*/
 #logo img {
-  height:95%;
+  height:100%;
+  width:100%;
+
 }
 #search{
-	width:40%;
+	width:60%;
 	position:relative;
   align-items:baseline;
-  background-color: grey;
+  text-align: center;
+
 }
 .search-bar {
+  display:none;
   width: 80%;
   border: 3px solid #00B4CC;
   padding: 5px;
@@ -125,10 +129,12 @@ footer{
 }
 #main-menu {
   display:block;
+  text-align: right;
+
 }
 #main-menu img{
   width:40%;
-  height:40%;
+  height:80%;
 }
 .display-menu {
   display: block;
@@ -150,6 +156,9 @@ footer{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .search-bar{
+    display:inline;
   }
 
   body {
@@ -182,6 +191,7 @@ footer{
   main{
     width:90%;
   }
+
   #videos{
 	flex-direction:row;
   }
