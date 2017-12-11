@@ -1,20 +1,34 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
 body {
-  background-color: silver;
+  background-color: #c0c0c0;
   font-size: 19px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 nav {
   display:none;
-  background-color: grey;
+  background-color: #808080;
   text-align: center;
 }
 nav a {
   padding: 1em;
   display: block;
   text-align: center;
-  background-color: silver;
-  color:white;
+  background-color: #c0c0c0;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+nav a:link{
+  color:#fff;
+}
+nav a:visited{
+  color:#fff;
+}
+nav a:hover{
+  background-color: #000;
+  color:#fff;
+}
+nav a:active{
+  color:#fff;
 }
 /*styles for site logo div*/
 #logo {
@@ -38,7 +52,7 @@ nav a {
 .search-bar {
   display:none;
   width: 80%;
-  border: 3px solid grey;
+  border: 3px solid #808080;
   padding: 5px;
   margin-top: 20px;
   height: 20px;
@@ -52,10 +66,10 @@ nav a {
   position: absolute;
   width: 40px;
   height: 36px;
-  border: 1px solid #grey;
-  background: grey;
+  border: 1px solid #808080;
+  background-color: #808080;
   text-align: center;
-  color: grey;
+  color: #808080;
   border-radius: 5px;
   font-size: 20px;
   margin-top: 10%;
@@ -67,7 +81,7 @@ nav a {
   width: 20px;
 }
 #social-media{
-  background-color: grey;
+  background-color: #808080;
 }
 #social-media img{
   width:40px;
@@ -82,14 +96,22 @@ header{
   display:flex;
   justify-content: space-around;
   color:#fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+h1{
+  color:#fff;
 }
 main{
-  background-color: grey;
+  background-color: #808080;
   margin-top:5px;
   width:100%;
   margin-left:auto;
   margin-right: auto;
   text-align: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
 }
 main img {
   width:100%;
@@ -109,14 +131,10 @@ iframe {
 }
 #map{
   width:100%;
-  background-color: grey;
+  background-color: #808080;
   height: 400px;
-}
-#first-video{
-	background-color:silver;
-}
-#second-video{
-	background-color:silver;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 footer{
   width:100%;
@@ -178,7 +196,7 @@ footer{
 
   }
   body {
-	background-color:silver;
+	background-color:#c0c0c0;
   }
 }
 /* END FIRST BREAKPOINT */
@@ -233,7 +251,7 @@ footer{
     margin-top: 20px;
   }
   body {
-	background-color:silver;
+	background-color:#c0c0c0;
   }
   footer{
     flex-direction: row;
