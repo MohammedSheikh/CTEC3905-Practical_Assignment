@@ -49,10 +49,10 @@ nav a:active{
   margin-top: 5px;
 }
 #search{
-	width:50%;
+  width:50%;
   align-items:baseline;
   text-align: center;
-  background-color: pink;
+  
 }
 /*This style applied to search bar*/
 .search-bar {
@@ -60,6 +60,8 @@ nav a:active{
   width: 95%;
   color: #000;
   font-size: 20px;
+  border: 2px solid #808080;
+  border-radius: 5px;
 }
 /*This style applied to the cursor within search bar*/
 .search-bar:focus{
@@ -68,13 +70,18 @@ nav a:active{
 /*This style applied to the search bar button*/
 .search-button {
   position: relative;
-	top: 30%;
+  bottom: 30%;
+  border: 2px solid #808080;
+  border-radius: 5px;
 }
 /*The class that handles the search bar icon*/
 .icon {
   content: url('../imgs/search-icon.png');
   height: 20px;
   width: 20px;
+}
+.display-search-bar{
+  display:table;
 }
 #social-media{
   background-color: #808080;

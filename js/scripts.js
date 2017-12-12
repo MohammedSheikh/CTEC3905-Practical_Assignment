@@ -8,9 +8,14 @@ This IFFE function runs itself immediately*/
 
   let menuButton = document.getElementById("main-menu");
   let navMenu = document.getElementById("nav-menu");
+  
+  let searchButton = document.getElementById("activate-search");
+  let searchPage = document.getElementById("search-page");
 
   /*When the menu button is clicked, the 'toggleMenu' function should execute*/
   menuButton.addEventListener("click", toggleMenu);
+  
+  searchButton.addEventListener("click", toggleSearchBar);
 
   let toggle = false; // the 'menu' button hidden at first
 
@@ -22,6 +27,18 @@ This IFFE function runs itself immediately*/
     }
     else { // false: it's hidden
       navMenu.classList.add("display-menu"), // show the menu
+      toggle = true
+    }
+  }
+  
+  //this menu hides/unhides menu depending on the screen size
+  function toggleSearchBar(){
+    if (toggle) { // if menu is visible...
+      searchPage.classList.remove("display-search-bar"), // ...hide the menu
+      toggle = false
+    }
+    else { // false: it's hidden
+      searchPage.classList.add("display-search-bar"), // show the menu
       toggle = true
     }
   }
