@@ -1,14 +1,17 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
+/*Styles for the entire body*/
 body {
   background-color: #c0c0c0;
   font-size: 19px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+/*Styles for the navigation menu*/
 nav {
   display:none;
   background-color: #808080;
   text-align: center;
 }
+/*Styles for the navigation menu links*/
 nav a {
   padding: 1em;
   display: block;
@@ -17,16 +20,20 @@ nav a {
   border: 2px solid #fff;
   border-radius: 5px;
 }
+/*Default style for the navigation menu link*/
 nav a:link{
   color:#fff;
 }
+/*This style applied to menu link if link has been visited*/
 nav a:visited{
   color:#fff;
 }
+/*This style applied to menu link if user hovers over it*/
 nav a:hover{
   background-color: #000;
   color:#fff;
 }
+/*This style applied to menu link if it is active*/
 nav a:active{
   color:#fff;
 }
@@ -47,15 +54,18 @@ nav a:active{
   text-align: center;
   background-color: pink;
 }
+/*This style applied to search bar*/
 .search-bar {
   display:none;
   width: 95%;
   color: #000;
   font-size: 20px;
 }
+/*This style applied to the cursor within search bar*/
 .search-bar:focus{
   color: #000;
 }
+/*This style applied to the search bar button*/
 .search-button {
   position: relative;
 	top: 30%;
@@ -88,6 +98,7 @@ header{
 h1{
   color:#fff;
 }
+/*This style applies to the 'main' of the web page*/
 main{
   background-color: #808080;
   margin-top:5px;

@@ -14,7 +14,7 @@ This IFFE function runs itself immediately*/
 
   let toggle = false; // the 'menu' button hidden at first
 
-  //this menu hides/unhides menu depending on the screen size 
+  //this menu hides/unhides menu depending on the screen size
   function toggleMenu(){
     if (toggle) { // if menu is visible...
       navMenu.classList.remove("display-menu"), // ...hide the menu
@@ -58,7 +58,6 @@ function initMap() {
   /*Here I have added a DOM listener that 'listens' when window is resized.
   I have added this as the center marker was staying in same place when I was
   resizing window, code used from: https://gist.github.com/toddmotto/5477991*/
-
   google.maps.event.addDomListener(window, 'resize', function() {
     let center = map.getCenter()
     google.maps.event.trigger(map, "resize")
