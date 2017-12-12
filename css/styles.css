@@ -7,7 +7,7 @@ body {
 }
 /*Styles for the navigation menu*/
 nav {
-  display:none;
+  display: none;
   background-color: #808080;
   text-align: center;
 }
@@ -21,42 +21,42 @@ nav a {
   border-radius: 5px;
 }
 /*Default style for the navigation menu link*/
-nav a:link{
-  color:#fff;
+nav a:link {
+  color: #fff;
 }
 /*This style applied to menu link if link has been visited*/
-nav a:visited{
-  color:#fff;
+nav a:visited {
+  color: #fff;
 }
 /*This style applied to menu link if user hovers over it*/
-nav a:hover{
+nav a:hover {
   background-color: #000;
-  color:#fff;
+  color: #fff;
 }
 /*This style applied to menu link if it is active*/
-nav a:active{
-  color:#fff;
+nav a:active {
+  color: #fff;
 }
 /*styles for site logo div*/
 #logo {
   height: 50%;
-  max-width:200px;
+  max-width: 200px;
 }
 /*styles for actual site logo*/
 #logo img {
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   margin-top: 5px;
 }
-#search{
-  width:50%;
-  align-items:baseline;
+#search {
+  width: 50%;
+  align-items: baseline;
   text-align: center;
   
 }
 /*This style applied to search bar*/
 .search-bar {
-  display:none;
+  display: none;
   width: 95%;
   color: #000;
   font-size: 20px;
@@ -64,7 +64,7 @@ nav a:active{
   border-radius: 5px;
 }
 /*This style applied to the cursor within search bar*/
-.search-bar:focus{
+.search-bar:focus {
   color: #000;
 }
 /*This style applied to the search bar button*/
@@ -80,60 +80,60 @@ nav a:active{
   height: 20px;
   width: 20px;
 }
-.display-search-bar{
-  display:table;
+.display-search-bar {
+  display: table;
 }
-#social-media{
+#social-media {
   background-color: #808080;
 }
-#social-media img{
-  width:40px;
-  height:40px;
+#social-media img {
+  width: 40px;
+  height: 40px;
 }
-header{
-  width:100%;
-  margin-left:auto;
+header {
+  width: 100%;
+  margin-left: auto;
   margin-right: auto;
   background-color: #000;
-  display:flex;
+  display: flex;
   justify-content: space-around;
-  color:#fff;
+  color: #fff;
   border: 2px solid #fff;
   border-radius: 5px;
   margin-top: 5px;
 }
-h1{
-  color:#fff;
+h1 {
+  color: #fff;
 }
 /*This style applies to the 'main' of the web page*/
-main{
+main {
   background-color: #808080;
-  margin-top:5px;
-  width:100%;
-  margin-left:auto;
+  margin-top: 5px;
+  width: 100%;
+  margin-left: auto;
   margin-right: auto;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 5px;
 }
 main img {
-  width:100%;
+  width: 100%;
 }
-section{
-  width:100%;
+section {
+  width: 100%;
 }
-#videos{
-  width:100%;
-  display:flex;
+#videos {
+  width: 100%;
+  display: flex;
   justify-content: space-around;
-  flex-direction:column;
+  flex-direction: column;
 }
 iframe {
-  width:100%;
-  height:95%;
+  width: 100%;
+  height: 95%;
 }
-#map{
-  width:100%;
+#map {
+  width: 100%;
   background-color: #808080;
   height: 400px;
   margin-top: 10px;
@@ -142,40 +142,40 @@ iframe {
 a {
   text-decoration: none;
 }
-footer{
-  width:100%;
+footer {
+  width: 100%;
   background-color: #000;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
-  margin-top:5px;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color:#fff;
+  color: #fff;
 }
 #main-menu {
-  display:block;
+  display: block;
   text-align: right;
   margin-right: 5px;
 }
-#main-menu img{
-  width:40%;
-  height:80%;
+#main-menu img {
+  width: 40%;
+  height: 80%;
 }
 .display-menu {
   display: block;
 }
-#test{
+#test {
   display: none;
 }
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
-  header{
-    width:95%;
+  header {
+    width: 95%;
   }
-  footer{
-    width:95%;
+  footer {
+    width: 95%;
   }
   nav a {
     display: inline-block;
@@ -185,43 +185,43 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
-  .search-bar{
-    display:inline;
+  .search-bar {
+    display: inline;
   }
-  #search{
+  #search {
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     text-align: center;
   }
   .search-button {
     position: static;
   }
-  #first-video{
+  #first-video {
   	height: 380px;
     width: 100%;
   }
-  #second-video{
+  #second-video {
   	height: 380px;
     width: 100%;
   }
   body {
-	background-color:#c0c0c0;
+	background-color: #c0c0c0;
   }
 }
 /* END FIRST BREAKPOINT */
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
-  header{
-    width:90%;
+  header {
+    width: 90%;
   }
-  footer{
-    width:90%;
+  footer {
+    width: 90%;
   }
   nav {
     display: block;
-    width:90%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -231,30 +231,30 @@ footer{
   #main-menu {
     display: none;
   }
-  main{
-    width:90%;
+  main {
+    width: 90%;
   }
-  #videos{
-	flex-direction:row;
+  #videos {
+	flex-direction: row;
   }
-  #first-video{
+  #first-video {
   	height: 350px;
     width: 100%;
     padding: 5px;
   }
-  #second-video{
+  #second-video {
   	height: 350px;
     width: 100%;
     padding: 5px;
   }
-  #test{
+  #test {
     display: block;
   }
 
   body {
-	background-color:#c0c0c0;
+	background-color: #c0c0c0;
   }
-  footer{
+  footer {
     flex-direction: row;
     justify-content: space-around;
   }
