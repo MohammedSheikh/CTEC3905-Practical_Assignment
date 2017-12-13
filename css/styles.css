@@ -78,10 +78,14 @@ nav a:active{
 }
 #social-media{
   background-color: #808080;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 #social-media img{
   width:40px;
   height:40px;
+
 }
 header{
   width:100%;
