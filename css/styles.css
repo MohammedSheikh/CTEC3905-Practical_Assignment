@@ -260,14 +260,23 @@ footer {
   }
 
   #social-media{
-    display: flex;
-    justify-content:space-around;
-    background-color: pink;
+    
+	 display: flex;
+
+    flex-wrap:wrap;
+   
+	width:130px;
   }
-  #social-media img{
-    width:30px;
-    height:30px;
-  }
+ 
+  #social-media a{
+ 
+    flex-grow: 1;
+	width: calc(100% * (1/3) - 5px - 5px);
+	text-align:center;
+	margin-top:15px;
+	
+}
+  
 
   #main-menu {
     display: none;
