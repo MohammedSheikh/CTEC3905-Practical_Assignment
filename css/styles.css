@@ -18,12 +18,7 @@ nav a {
   text-align: center;
   background-color: #c0c0c0;
 }
-#testX{
-  background-color: green;
-}
-#empty{
-  background-color: blue;
-}
+
 /*Default style for the navigation menu link*/
 nav a:link {
   color: #fff;
@@ -213,7 +208,7 @@ footer {
       margin-right: 10px;
 
 
- 
+
 
   }
 
