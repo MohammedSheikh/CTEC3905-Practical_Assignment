@@ -17,8 +17,12 @@ nav a {
   display: block;
   text-align: center;
   background-color: #c0c0c0;
-  border: 2px solid #fff;
-  border-radius: 5px;
+}
+#testX{
+  background-color: green;
+}
+#empty{
+  background-color: blue;
 }
 /*Default style for the navigation menu link*/
 nav a:link {
@@ -48,20 +52,28 @@ nav a:active {
   width: 100%;
   margin-top: 5px;
 }
-#search {
-  width: 50%;
-  align-items: baseline;
+
+#search{
+	width:50%;
+  align-items:baseline;
+  margin-left: 5px;
+  margin-right: 5px;
   text-align: center;
-  
+  background-color: #000;
 }
 /*This style applied to search bar*/
 .search-bar {
+  display:none;
+
+
+/*This style applied to search bar*/
+.search-bar {
   display: none;
-  width: 95%;
   color: #000;
   font-size: 20px;
   border: 2px solid #808080;
   border-radius: 5px;
+
 }
 /*This style applied to the cursor within search bar*/
 .search-bar:focus {
@@ -70,9 +82,11 @@ nav a:active {
 /*This style applied to the search bar button*/
 .search-button {
   position: relative;
-  bottom: 30%;
-  border: 2px solid #808080;
-  border-radius: 5px;
+    top: 30%;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    margin-left: 15px;
+
 }
 /*The class that handles the search bar icon*/
 .icon {
@@ -80,15 +94,12 @@ nav a:active {
   height: 20px;
   width: 20px;
 }
-.display-search-bar {
-  display: table;
-}
-#social-media {
-  background-color: #808080;
-}
-#social-media img {
-  width: 40px;
-  height: 40px;
+
+
+#social-media img{
+  width:20px;
+  height:20px;
+
 }
 header {
   width: 100%;
@@ -102,6 +113,7 @@ header {
   border-radius: 5px;
   margin-top: 5px;
 }
+
 h1 {
   color: #fff;
 }
@@ -141,6 +153,7 @@ iframe {
 }
 a {
   text-decoration: none;
+
 }
 footer {
   width: 100%;
@@ -158,6 +171,7 @@ footer {
   display: block;
   text-align: right;
   margin-right: 5px;
+  max-width:150px;
 }
 #main-menu img {
   width: 40%;
@@ -166,9 +180,7 @@ footer {
 .display-menu {
   display: block;
 }
-#test {
-  display: none;
-}
+
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header {
@@ -185,18 +197,39 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  .search-bar {
-    display: inline;
+
+
+  #logo{
+    padding-right: 15px;
   }
-  #search {
+
+  #search{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    align-items:center;
+    text-align: right;
+    	width:50%;
+      margin-left: 10px;
+      margin-right: 10px;
+
+
+ 
+
   }
-  .search-button {
+
+  .search-bar{
+    display:inline;
+    width: 95%;
+    color: #000;
+    font-size: 20px;
+  }
+
+
+.search-button{
     position: static;
-  }
+    margin-left: 0px;
+}
+
   #first-video {
   	height: 380px;
     width: 100%;
@@ -225,9 +258,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  nav a {
-    line-height: 3em;
+
+  #search{
+  	width:50%;
+    margin-left: 5px;
+    margin-right: 5px;
   }
+
+
   #main-menu {
     display: none;
   }
@@ -246,9 +284,6 @@ footer {
   	height: 350px;
     width: 100%;
     padding: 5px;
-  }
-  #test {
-    display: block;
   }
 
   body {

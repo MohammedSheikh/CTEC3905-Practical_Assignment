@@ -45,6 +45,29 @@ This IFFE function runs itself immediately*/
 
 })();
 
+(function(){
+
+  let socialNode = document.getElementById("social-media");
+  let searchNode = document.getElementById("search");
+  const mq = window.matchMedia( "(min-width: 1000px)" );
+  let navMenu = document.getElementById("nav-menu");
+
+  if (matchMedia) {
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+  if (mq.matches) {
+    searchNode.parentNode.insertBefore(socialNode, searchNode.nextSibling);
+  } else {
+    navMenu.appendChild(socialNode);
+  }
+}
+
+})();
+
 //function that implements Google Maps API into the website
 function initMap() {
   //the latitude and logitude of the location
