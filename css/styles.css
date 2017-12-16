@@ -55,15 +55,14 @@ nav a:active{
 #search{
 	width:50%;
   align-items:baseline;
+  margin-left: 5px;
+  margin-right: 5px;
   text-align: center;
-  background-color: pink;
+  background-color: #000;
 }
 /*This style applied to search bar*/
 .search-bar {
   display:none;
-  width: 95%;
-  color: #000;
-  font-size: 20px;
 }
 /*This style applied to the cursor within search bar*/
 .search-bar:focus{
@@ -72,7 +71,10 @@ nav a:active{
 /*This style applied to the search bar button*/
 .search-button {
   position: relative;
-	top: 30%;
+    top: 30%;
+    border: 2px solid #808080;
+    border-radius: 5px;
+
 }
 /*The class that handles the search bar icon*/
 .icon {
@@ -156,6 +158,8 @@ footer{
   display:block;
   text-align: right;
   margin-right: 5px;
+
+  max-width:150px;
 }
 #main-menu img{
   width:40%;
@@ -181,18 +185,35 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
-  .search-bar{
-    display:inline;
+
+  #logo{
+    padding-right: 15px;
   }
+
   #search{
     display: flex;
     justify-content: space-around;
     align-items:center;
-    text-align: center;
+    text-align: right;
+    	width:50%;
+      margin-left: 10px;
+      margin-right: 10px;
+
   }
-  .search-button {
+
+  .search-bar{
+    display:inline;
+    width: 95%;
+    color: #000;
+    font-size: 20px;
+  }
+
+.search-button{
     position: static;
-  }
+}
+
+
+
   #first-video{
   	height: 380px;
     width: 100%;
@@ -222,7 +243,11 @@ footer{
     margin-right: auto;
   }
 
-
+  #search{
+  	width:50%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
 
   #main-menu {
