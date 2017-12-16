@@ -56,10 +56,6 @@ nav a:active {
   text-align: center;
   background-color: #000;
 }
-/*This style applied to search bar*/
-.search-bar {
-  display:none;
-}
 
 /*This style applied to search bar*/
 .search-bar {
@@ -90,11 +86,14 @@ nav a:active {
   width: 20px;
 }
 
+#social-media{
+  display: flex;
+  justify-content: space-around;
+}
 
 #social-media img{
   width:20px;
   height:20px;
-
 }
 header {
   width: 100%;
@@ -260,6 +259,15 @@ footer {
     margin-right: 5px;
   }
 
+  #social-media{
+    display: flex;
+    justify-content:space-around;
+    background-color: pink;
+  }
+  #social-media img{
+    width:30px;
+    height:30px;
+  }
 
   #main-menu {
     display: none;
