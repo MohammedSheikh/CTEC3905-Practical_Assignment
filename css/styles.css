@@ -17,8 +17,12 @@ nav a {
   display: block;
   text-align: center;
   background-color: #c0c0c0;
-  border: 2px solid #fff;
-  border-radius: 5px;
+}
+#testX{
+  background-color: green;
+}
+#empty{
+  background-color: blue;
 }
 /*Default style for the navigation menu link*/
 nav a:link{
@@ -76,15 +80,10 @@ nav a:active{
   height: 20px;
   width: 20px;
 }
-#social-media{
-  background-color: #808080;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
+
 #social-media img{
-  width:40px;
-  height:40px;
+  width:20px;
+  height:20px;
 
 }
 header{
@@ -99,6 +98,7 @@ header{
   border-radius: 5px;
   margin-top: 5px;
 }
+
 h1{
   color:#fff;
 }
@@ -138,6 +138,7 @@ iframe {
 }
 a {
   text-decoration: none;
+
 }
 footer{
   width:100%;
@@ -163,9 +164,7 @@ footer{
 .display-menu {
   display: block;
 }
-#test{
-  display: none;
-}
+
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header{
@@ -222,9 +221,10 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
-  nav a {
-    line-height: 3em;
-  }
+
+
+
+
   #main-menu {
     display: none;
   }
@@ -244,9 +244,7 @@ footer{
     width: 100%;
     padding: 5px;
   }
-  #test{
-    display: block;
-  }
+
 
   body {
 	background-color:#c0c0c0;

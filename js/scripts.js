@@ -9,8 +9,37 @@ This IFFE function runs itself immediately*/
   let menuButton = document.getElementById("main-menu");
   let navMenu = document.getElementById("nav-menu");
 
+  let socialNode = document.getElementById("social-media");
+
+
+    let testNode = document.getElementById("test");
+
+      let searchNode = document.getElementById("search");
+
+
+
   /*When the menu button is clicked, the 'toggleMenu' function should execute*/
   menuButton.addEventListener("click", toggleMenu);
+
+const mq = window.matchMedia( "(min-width: 1000px)" );
+
+if (matchMedia) {
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+  if (mq.matches) {
+    console.log("xx");
+    searchNode.parentNode.insertBefore(socialNode, searchNode.nextSibling);
+
+  } else {
+    console.log("xxzzzzzz");
+    navMenu.appendChild(socialNode);
+  }
+
+}
 
   let toggle = false; // the 'menu' button hidden at first
 
@@ -27,6 +56,8 @@ This IFFE function runs itself immediately*/
   }
 
 })();
+
+
 
 //function that implements Google Maps API into the website
 function initMap() {
