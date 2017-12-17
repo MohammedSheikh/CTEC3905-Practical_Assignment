@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+<!--Language of HTML-->
 <html lang="en">
 <head>
+  <!--Specifies character encoding-->
   <meta charset="utf-8">
   <title>Audi Fansite- Home</title>
+  <!--Links the stylesheet-->
   <link rel="stylesheet" href="css/styles.css">
   <!--The meta tag allows us to control the viewport which controls the page's
   scaling and dimensions-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <!--Header of page-->
   <header>
   <!--Div for main logo of website-->
   <div id="logo">
@@ -25,15 +29,14 @@
      </button>
   </div>
 
-
   <!--Hamburger main menu-->
   <a id="main-menu" href="#">
     <img src="content/images/hamburger-menu.png" alt="menu">
   </a>
 
-
   </header>
 
+  <!--Navigation menu-->
   <nav id="nav-menu">
     <a href="index.html">Home</a>
     <a href="history.html">History of Audi</a>
@@ -41,10 +44,8 @@
     <a href="current-lineup.html">Current Lineup</a>
     <a href="the-future.html">The Future</a>
 
-
     <!--Div that holds the social media icons-->
     <div id="social-media">
-
       <a href="https://www.facebook.com/AudiUK/">
         <img id="facebook" src="content/images/facebook-original.png" alt="facebook">
       </a>
@@ -63,13 +64,11 @@
       <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
         <img id="youtube" src="content/images/youtube-original.png" alt="youtube">
       </a>
-
     </div>
+
   </nav>
 
-  <!--Main navigation menu-->
-
-
+  <!--Main section of page-->
   <main>
 
     <h1>HOME</h1>
@@ -105,6 +104,7 @@
       </div>
     </section>
 
+    <!--Section that contains videos-->
     <section>
       <header>
         <h2>Audi Videos</h2>
@@ -112,8 +112,10 @@
 
       <div id="videos">
         <div id="first-video">
+          <!--HTML native Video tag, with native controls-->
           <video controls poster="content/images/audi-a8.jpg">
             <source src="content/videos/audi-a8.mp4" type="video/mp4">
+              <!--Open source container format for media-->
             <source src="content/videos/audi-a8.ogg" type="video/ogg">
             Your browser does not support the video tag.
           </video>
@@ -131,14 +133,12 @@
     </section>
 
   </main>
-
+  <!--Footer starts-->
   <footer>
 
     <div id="copyright-text">
     <small>&copy; Copyright 2017, Mohammed Sheikh</small>
     </div>
-
-
 
   </footer>
 
@@ -148,5 +148,4 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSAIfrJlNHBhRZ4ubpULEMFmIL8bXRPYM&callback=initMap"></script>
 
 </body>
-
 </html>
