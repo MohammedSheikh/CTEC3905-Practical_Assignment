@@ -36,6 +36,31 @@ nav a:hover {
 nav a:active {
   color: #fff;
 }
+
+#social-media a {
+  
+  display: block;
+  text-align: center;
+  background-color: transparent;
+}
+
+/*Default style for the navigation menu link*/
+#social-media a:link {
+  color: transparent;
+}
+/*This style applied to menu link if link has been visited*/
+#social-media a:visited {
+  color: transparent;
+}
+/*This style applied to menu link if user hovers over it*/
+#social-media a:hover {
+  background-color: transparent;
+  color: transparent;
+}
+/*This style applied to menu link if it is active*/
+#social-media a:active {
+  color: transparent;
+}
 /*styles for site logo div*/
 #logo {
   height: 50%;
@@ -213,7 +238,11 @@ footer {
   }
   nav a {
     display: inline-block;
+	width:10%;
+	font-size:17px;
+	background-color:transparent;
   }
+  
   main {
     width: 95%;
     margin-left: auto;
@@ -279,6 +308,11 @@ footer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  nav a{
+	  font-size:20px;
+	background-color:transparent;
   }
 
   #search{
