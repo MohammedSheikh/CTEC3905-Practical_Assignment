@@ -126,7 +126,7 @@ nav a:active {
   }
 
   #facebook:hover{
-	 border:5px solid blue;
+	 border:5px solid #0000ff;
   }
 
   #twitter:hover{
@@ -134,11 +134,11 @@ nav a:active {
   }
 
   #instagram:hover{
-	 border:5px solid purple;
+	 border:5px solid #551a8b;
   }
 
   #flickr:hover{
-	 border:5px solid pink;
+	 border:5px solid #ff69b4;
   }
 
   #linkedin:hover{
@@ -146,7 +146,7 @@ nav a:active {
   }
 
   #youtube:hover{
-	 border:5px solid red;
+	 border:5px solid #ff0000;
   }
 header {
   width: 100%;
@@ -334,10 +334,19 @@ footer {
     flex-grow: 1;
 	width: calc(100% * (1/3) - 5px - 5px);
 	text-align:center;
+
+}
+
+#social-media a:hover{
+
+  background-color: transparent;
+  color:transparent;
 }
 
   #social-media img{
 	  margin-top:16px;
+    width:30px;
+    height:30px;
   }
 
 
