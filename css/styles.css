@@ -208,6 +208,15 @@ footer {
 .display-menu {
   display: block;
 }
+#sitemap {
+  background-color: #808080;
+}
+#sitemap a {
+  display: block;
+  padding:5px;
+  text-decoration:underline;
+  color:#fff;
+}
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -268,9 +277,13 @@ footer {
   body {
     background-color: #c0c0c0;
   }
+  #sitemap a {
+    display: inline;
+  }
 }
 /* END FIRST BREAKPOINT */
 
+/*Added extra media query to solve navigation sizing issue*/
 @media screen and (min-width: 845px) {
   nav a {
     width:15%;
@@ -347,9 +360,6 @@ footer {
   body {
 	  background-color: #c0c0c0;
   }
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+
 }
 /* END SECOND BREAKPOINT */
