@@ -224,8 +224,10 @@ footer {
   }
   nav a {
     display: inline-block;
-  	width:10%;
-  	font-size:17px;
+  	width:13%;
+    margin-left: 0px;
+    margin-right: 0px;
+  	font-size:13px;
   	background-color:transparent;
   }
   main {
@@ -268,6 +270,15 @@ footer {
   }
 }
 /* END FIRST BREAKPOINT */
+
+@media screen and (min-width: 845px) {
+  nav a {
+    width:15%;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size:17px;
+  }
+}
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
