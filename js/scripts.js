@@ -6,13 +6,13 @@ allow only certain code*/
 This IFFE function runs itself immediately*/
 /*The IIFE below is used to hide and show the menu depending on screen size*/
 (function(){
-	
+
   let menuButton = document.getElementById("main-menu");
   let navMenu = document.getElementById("nav-menu");
-  
+
   /*When the menu button is clicked, the 'toggleMenu' function should execute*/
   menuButton.addEventListener("click", toggleMenu);
-  
+
   let toggle = false; // the 'menu' button hidden at first
 
   //this menu hides/unhides menu depending on the screen size
@@ -25,8 +25,8 @@ This IFFE function runs itself immediately*/
       navMenu.classList.add("display-menu"), // show the menu
       toggle = true
     }
-  } 
-  
+  }
+
 })();
 
 /*This IIFE is used to move the social media div from one parent div to another when screen size changes.
@@ -34,9 +34,9 @@ In the desktop view, the div will move from the nav to the header dynamically, c
 (function(){
 
   /*var to store the div id that will move upon screen size change*/
-  let socialNode = document.getElementById("social-media"); 
+  let socialNode = document.getElementById("social-media");
   /*var to store the div id that will precede the div when after it has been moved*/
-  let searchNode = document.getElementById("search"); 
+  let searchNode = document.getElementById("search");
   /*var for the JS to watch for any screen size changes*/
   const mq = window.matchMedia( "(min-width: 1000px)" );
   let navMenu = document.getElementById("nav-menu");
