@@ -4,8 +4,9 @@ allow only certain code*/
 
 /*Immediately Invoked Function Expression (IFFE).
 This IFFE function runs itself immediately*/
+/*The IIFE below is used to hide and show the menu depending on screen size*/
 (function(){
-
+	
   let menuButton = document.getElementById("main-menu");
   let navMenu = document.getElementById("nav-menu");
   
@@ -24,28 +25,36 @@ This IFFE function runs itself immediately*/
       navMenu.classList.add("display-menu"), // show the menu
       toggle = true
     }
-  }
+  } 
   
 })();
 
+/*This IIFE is used to move the social media div from one parent div to another when screen size changes.
+In the desktop view, the div will move from the nav to the header dynamically, code adapated from Mozilla Developer Network official code documentation*/
 (function(){
 
-  let socialNode = document.getElementById("social-media");
-  let searchNode = document.getElementById("search");
+  /*var to store the div id that will move upon screen size change*/
+  let socialNode = document.getElementById("social-media"); 
+  /*var to store the div id that will precede the div when after it has been moved*/
+  let searchNode = document.getElementById("search"); 
+  /*var for the JS to watch for any screen size changes*/
   const mq = window.matchMedia( "(min-width: 1000px)" );
   let navMenu = document.getElementById("nav-menu");
 
+  /*If screen width is minimum 1000px...*/
   if (matchMedia) {
-  mq.addListener(WidthChange);
-  WidthChange(mq);
+  mq.addListener(WidthChange);/*Add listener with the function as parameter*/
+  WidthChange(mq);/*Call the WidthChange func and give the min width media as its parameter*/
 }
 
-// media query change
+// function that handles media query change logic
 function WidthChange(mq) {
+  /*If width is min 1000px...*/
   if (mq.matches) {
+	/*Insert social media div into header, just after the existing search div*/
     searchNode.parentNode.insertBefore(socialNode, searchNode.nextSibling);
   } else {
-    navMenu.appendChild(socialNode);
+    navMenu.appendChild(socialNode);/*If not just leave the social media div where it is*/
   }
 }
 
