@@ -16,7 +16,6 @@ nav a {
   padding: 1em;
   display: block;
   text-align: center;
-
 }
 /*Default style for the navigation menu link*/
 nav a:link {
@@ -211,12 +210,14 @@ footer {
 }
 #sitemap {
   background-color: #808080;
+  padding-top:10px;
 }
 #sitemap a {
   display: block;
   padding:5px;
   text-decoration:underline;
   color:#fff;
+  font-size:17px;
 }
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
@@ -361,6 +362,5 @@ footer {
   body {
 	  background-color: #c0c0c0;
   }
-
 }
 /* END SECOND BREAKPOINT */
