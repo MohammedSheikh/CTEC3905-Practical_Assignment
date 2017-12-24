@@ -15,24 +15,29 @@ body {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+   z-index: 99;
+
 }
 .overlay:target {
   visibility: visible;
   opacity: 1;
+
 }
 /*Styles for popup modal that constains search bar*/
 .popup {
   padding: 20px;
-  background: #fff;
+  background-color: #c0c0c0;
+  border:5px solid #000;
 }
 /*Close button within popup modal*/
 .popup .close {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 15px;
   transition: all 200ms;
   font-size: 2em;
   font-weight: bold;
+  color:#000;
 }
 /*Styles for the navigation menu*/
 nav {
@@ -123,12 +128,35 @@ nav a:active {
   top: 30%;
   margin-left: 15px;
 }
+#popup-search-bar{
+  display: flex;
+  justify-content:flex-start;
+  width:75%;
+}
+
 
 /*The class that handles the search bar icon*/
 .icon {
   content: url('../content/images/search-icon.png');
   height: 20px;
   width: 20px;
+}
+.iconX {
+  content: url('../content/images/search-icon-popup.png');
+  height: 20px;
+  width: 20px;
+  margin-right: 2px;
+}
+.search-buttonZ{
+  padding-left: 5px;
+  border: 2px solid #808080;
+	border-radius: 5px;
+}
+#search-inputX{
+  border: 2px solid #808080;
+  border-radius: 5px;
+  font-size: 0.9em;
+width:100%;
 }
 #social-media {
   display: flex;
