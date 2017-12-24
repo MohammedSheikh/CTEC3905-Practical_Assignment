@@ -71,12 +71,13 @@
 <!--https://codepen.io/imprakash/pen/GgNMXO   -->
 <div id="search-popup" class="overlay">
 	<div class="popup">
-		<a class="close" href="#">&times;</a>
+    <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
+    It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
+		<a class="close" aria-label="Close Account Info Modal Box" href="#">&times;</a>
     <!--Div for search form-->
     <div id="search">
   	<input type="text" id="search-input" placeholder="Search...">
-
-    <i class="icon"></i></a>
+    <i class="icon"></i>
     </div>
 	</div>
 </div>
