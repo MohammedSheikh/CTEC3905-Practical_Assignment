@@ -43,20 +43,20 @@ In the desktop view, the div will move from the nav to the header dynamically, c
 
   /*If screen width is minimum 1000px...*/
   if (matchMedia) {
-  mq.addListener(WidthChange);/*Add listener with the function as parameter*/
-  WidthChange(mq);/*Call the WidthChange func and give the min width media as its parameter*/
-}
-
-// function that handles media query change logic
-function WidthChange(mq) {
-  /*If width is min 1000px...*/
-  if (mq.matches) {
-	/*Insert social media div into header, just after the existing search div*/
-    searchNode.parentNode.insertBefore(socialNode, searchNode.nextSibling);
-  } else {
-    navMenu.appendChild(socialNode);/*If not just leave the social media div where it is*/
+    mq.addListener(WidthChange);/*Add listener with the function as parameter*/
+    WidthChange(mq);/*Call the WidthChange func and give the min width media as its parameter*/
   }
-}
+
+  // function that handles media query change logic
+  function WidthChange(mq) {
+    /*If width is min 1000px...*/
+    if (mq.matches) {
+    /*Insert social media div into header, just after the existing search div*/
+      searchNode.parentNode.insertBefore(socialNode, searchNode.nextSibling);
+    } else {
+      navMenu.appendChild(socialNode);/*If not just leave the social media div where it is*/
+    }
+  }
 
 })();
 

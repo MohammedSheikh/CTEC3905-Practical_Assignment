@@ -5,40 +5,6 @@ body {
   font-size: 1em;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-/*Overlay effect of modal*/
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-   z-index: 99;
-
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-
-}
-/*Styles for popup modal that constains search bar*/
-.popup {
-  padding: 20px;
-  background-color: #c0c0c0;
-  border:5px solid #000;
-}
-/*Close button within popup modal*/
-.popup .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  transition: all 200ms;
-  font-size: 2em;
-  font-weight: bold;
-  color:#000;
-}
 /*Styles for the navigation menu*/
 nav {
   display: none;
@@ -133,30 +99,28 @@ nav a:active {
   justify-content:flex-start;
   width:75%;
 }
-
-
 /*The class that handles the search bar icon*/
 .icon {
   content: url('../content/images/search-icon.png');
   height: 20px;
   width: 20px;
 }
-.iconX {
+.icon-popup {
   content: url('../content/images/search-icon-popup.png');
   height: 20px;
   width: 20px;
   margin-right: 2px;
 }
-.search-buttonZ{
+.search-button-popup{
   padding-left: 5px;
   border: 2px solid #808080;
 	border-radius: 5px;
 }
-#search-inputX{
+#search-input-popup{
   border: 2px solid #808080;
   border-radius: 5px;
-  font-size: 0.9em;
-width:100%;
+  font-size: 1em;
+  width:100%;
 }
 #social-media {
   display: flex;
@@ -275,6 +239,39 @@ footer {
   color:#fff;
   font-size:1em;
 }
+/*Overlay effect of modal*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  /*z-index of 99 allows element to always be in front of all other elements*/
+  z-index: 99;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+/*Styles for popup modal that constains search bar*/
+.popup {
+  padding: 20px;
+  background-color: #c0c0c0;
+  border:5px solid #000;
+}
+/*Close button within popup modal*/
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 2em;
+  font-weight: bold;
+  color:#000;
+}
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -323,8 +320,8 @@ footer {
   .search-button {
     position: static;
     margin-left: 0px;
-	border: 2px solid #808080;
-	border-radius: 5px;
+	  border: 2px solid #808080;
+	  border-radius: 5px;
   }
   #first-video {
   	height: 380px;
@@ -339,6 +336,7 @@ footer {
   }
   #sitemap a {
     display: inline;
+    font-size: 0.9em;
   }
   #search-popup {
     display: none;
@@ -356,6 +354,9 @@ footer {
   }
   #search-popup {
     display: none;
+  }
+  #sitemap a {
+    font-size: 1em;
   }
 }
 
@@ -415,7 +416,7 @@ footer {
     width: 90%;
   }
   #videos {
-	   flex-direction: row;
+	  flex-direction: row;
   }
   #first-video {
   	height: 350px;
@@ -428,7 +429,7 @@ footer {
     padding: 5px;
   }
   body {
-	background-color: #c0c0c0;
+	  background-color: #c0c0c0;
   }
 }
 /* END SECOND BREAKPOINT */
