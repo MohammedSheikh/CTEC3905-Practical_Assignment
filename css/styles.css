@@ -2,7 +2,7 @@
 /*Styles for the entire body*/
 body {
   background-color: #c0c0c0;
-  font-size: 19px;
+  font-size: 1em;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 /*Overlay effect of modal*/
@@ -32,7 +32,7 @@ body {
   top: 10px;
   right: 15px;
   transition: all 200ms;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -111,7 +111,7 @@ nav a:active {
 .search-bar {
   display: none;
   color: #000;
-  font-size: 20px;
+  font-size: 1.5em;
   border: 2px solid #808080;
   border-radius: 5px;
 }
@@ -123,8 +123,6 @@ nav a:active {
 .search-button {
   position: relative;
   top: 30%;
-  border: 2px solid #808080;
-  border-radius: 5px;
   margin-left: 15px;
 }
 
@@ -249,7 +247,7 @@ footer {
   padding:5px;
   text-decoration:underline;
   color:#fff;
-  font-size:17px;
+  font-size:1em;
 }
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
@@ -294,11 +292,13 @@ footer {
     display:inline;
     width: 95%;
     color: #000;
-    font-size: 20px;
+    font-size: 1.5em;
   }
   .search-button {
     position: static;
     margin-left: 0px;
+	border: 2px solid #808080;
+	border-radius: 5px;
   }
   #first-video {
   	height: 380px;
@@ -366,6 +366,7 @@ footer {
 	  display: flex;
     flex-wrap:wrap;
 	  width:130px;
+	  margin-bottom:8px;
   }
   #social-media a {
     flex-grow: 1;
@@ -401,7 +402,7 @@ footer {
     padding: 5px;
   }
   body {
-	  background-color: #c0c0c0;
+	background-color: #c0c0c0;
   }
 }
 /* END SECOND BREAKPOINT */
