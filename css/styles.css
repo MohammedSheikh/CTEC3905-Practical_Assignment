@@ -182,6 +182,13 @@ main img {
 }
 section {
   width: 100%;
+  text-align: justify;
+}
+section p {
+  padding: 3px 8px;
+}
+#resources p {
+  text-align: center;
 }
 #videos {
   width: 100%;
