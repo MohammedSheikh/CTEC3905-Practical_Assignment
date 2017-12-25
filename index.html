@@ -15,8 +15,8 @@
   <!--Header of page-->
   <header>
     <!--Div for main logo of website-->
-    <div id="logo">
-      <a href="index.html">
+    <div id="logo" role="banner">
+      <a href="index.html" aria-label="Go to home">
         <img src="content/images/site-logo.png" alt="logo">
       </a>
     </div>
@@ -24,7 +24,7 @@
   <!--Div for search form-->
     <div id="search">
       <input type="text" id="search-input" placeholder="Search...">
-      <a class="search-button" href="#search-popup">
+      <a class="search-button" aria-label="Search" href="#search-popup">
         <i class="icon"></i>
       </a>
     </div>
@@ -49,27 +49,27 @@
     <div id="social-media">
       <a href="https://www.facebook.com/AudiUK/">
         <img id="facebook" src="content/images/facebook-original.png"
-        alt="facebook icon" title="facebook">
+        alt="facebook icon" title="Facebook">
       </a>
       <a href="https://twitter.com/audiuk?lang=en">
         <img id="twitter" src="content/images/twitter-original.png"
-        alt="twitter icon" title="twitter">
+        alt="twitter icon" title="Twitter">
       </a>
       <a href="https://www.instagram.com/audiuk/?hl=en">
         <img id="instagram" src="content/images/instagram-original.png"
-        alt="instagram icon" title="instagram">
+        alt="instagram icon" title="Instagram">
       </a>
       <a href="https://www.flickr.com/photos/audiag/">
         <img id="flickr" src="content/images/flickr-original.png"
-        alt="flickr icon" title="flickr">
+        alt="flickr icon" title="Flickr">
       </a>
       <a href="https://uk.linkedin.com/company/audi-uk">
         <img id="linkedin" src="content/images/linkedin-original.png"
-        alt="linkedin icon" title="linkedin">
+        alt="linkedin icon" title="Linkedin">
       </a>
       <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
         <img id="youtube" src="content/images/youtube-original.png"
-        alt="youtube icon" title="youtube">
+        alt="youtube icon" title="Youtube">
       </a>
     </div>
 
@@ -81,9 +81,9 @@
     <div class="popup">
       <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
       It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
-      <a class="close" aria-label="Close Account Info Modal Box" href="#">&times;
+      <a class="close" aria-label="Close popup box" href="#">&times;
       </a>
-      <!--Div for search form-->
+      <!--Div for search feature-->
       <div id="search-bar-popup">
         <input type="text" id="search-input-popup" placeholder="Search...">
         <a class="search-button-popup" href="#search-popup">
@@ -98,7 +98,8 @@
 
     <h1>HOME</h1>
 
-    <img src="content/images/homepage-banner.jpg" alt="image of Audi R8">
+    <img src="content/images/homepage-banner.jpg" aria-label="Image of Audi R8"
+    alt="Audi image">
 
     <section>
       <header>
