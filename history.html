@@ -1,34 +1,189 @@
 <!DOCTYPE html>
+<!--Language of HTML-->
 <html lang="en">
 <head>
+  <!--Specifies character encoding-->
   <meta charset="utf-8">
-  <title>Audi Fansite- History of Audi</title>
+  <title>Audi Fansite- Home</title>
+  <!--Links the stylesheet-->
   <link rel="stylesheet" href="css/styles.css">
+  <!--The meta tag allows us to control the viewport which controls the page's
+  scaling and dimensions-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
+  <!--Header of page-->
+  <header>
+    <!--Div for main logo of website-->
+    <div id="logo">
+      <a href="index.html">
+        <img src="content/images/site-logo.png" alt="logo">
+      </a>
+    </div>
 
-<header>
+  <!--Div for search form-->
+    <div id="search">
+      <input type="text" id="search-input" class="search-bar"
+      placeholder="Search...">
+      <a class="search-button" href="#search-popup">
+        <i class="icon"></i>
+      </a>
+    </div>
 
-  <h1>Audi Fansite</h1>
-  <h2>History of Audi</h2>
-  <div id="logo"><img src="imgs/audi-logo.png" alt="logo"></div>
+    <!--Hamburger main menu-->
+    <a id="main-menu" href="#">
+      <img src="content/images/hamburger-menu.png" alt="main menu">
+    </a>
 
-  <a id="mainMenu" href="#">Menu</a>
+  </header>
+
+  <!--Navigation menu-->
   <nav id="nav-menu">
+
     <a href="index.html">Home</a>
     <a href="history.html">History of Audi</a>
-    <a href="current-lineup.html">Current Lineup</a>
-    <a href="top-five.html">Top 5</a>
     <a href="gallery.html">Gallery</a>
+    <a href="current-lineup.html">Current Lineup</a>
     <a href="the-future.html">The Future</a>
+
+    <!--Div that holds the social media icons-->
+    <div id="social-media">
+      <a href="https://www.facebook.com/AudiUK/">
+        <img id="facebook" src="content/images/facebook-original.png"
+        alt="facebook icon" title="facebook">
+      </a>
+      <a href="https://twitter.com/audiuk?lang=en">
+        <img id="twitter" src="content/images/twitter-original.png"
+        alt="twitter icon" title="twitter">
+      </a>
+      <a href="https://www.instagram.com/audiuk/?hl=en">
+        <img id="instagram" src="content/images/instagram-original.png"
+        alt="instagram icon" title="instagram">
+      </a>
+      <a href="https://www.flickr.com/photos/audiag/">
+        <img id="flickr" src="content/images/flickr-original.png"
+        alt="flickr icon" title="flickr">
+      </a>
+      <a href="https://uk.linkedin.com/company/audi-uk">
+        <img id="linkedin" src="content/images/linkedin-original.png"
+        alt="linkedin icon" title="linkedin">
+      </a>
+      <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
+        <img id="youtube" src="content/images/youtube-original.png"
+        alt="youtube icon" title="youtube">
+      </a>
+    </div>
+
   </nav>
 
-</header>
+  <!-- Modal popup that contains search bar -->
+  <!--https://codepen.io/imprakash/pen/GgNMXO   -->
+  <div id="search-popup" class="overlay">
+    <div class="popup">
+      <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
+      It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
+      <a class="close" aria-label="Close Account Info Modal Box"
+      href="#">&times;
+      </a>
+      <!--Div for search form-->
+      <div id="popup-search-bar">
+        <input type="text" id="search-input-popup" placeholder="Search...">
+        <a class="search-button-popup" href="#search-popup">
+          <i class="icon-popup"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
-<script src="js/scripts.js"></script>
+  <!--Main section of page-->
+  <main>
 
-</body>
+    <h1>HOME</h1>
+
+    <img src="content/images/homepage-banner.jpg" alt="image of Audi R8">
+
+    <section>
+      <header>
+        <h2>About This Site</h2>
+      </header>
+      <p>This is an Audi fansite where you can find out about the latest
+      Audi car models and see stunning images of their breathtaking designs.
+      Since the car company was established in 1909 in Germany, the brand has
+      grown exponentially and is now regarded as one of the top car brands in
+      the World. Models such as the Audi 80 and the R8 have brought great
+      success throughout the years.</p>
+    </section>
+
+    <section id="resources">
+      <header>
+        <h2>Audi Resources</h2>
+      </header>
+      <p>Official Audi website: <a href="http://www.audi.com/en.html">Click Here</a></p>
+      <p>Audi News: <a href="https://www.audi.co.uk/about-audi/latest-news.html">Click Here</a></p>
+      <p>Audi in the UK: <a href="https://beta.audi.co.uk/">Click Here</a></p>
+      <p>Work for Audi: <a href="https://www.audi.co.uk/about-audi/careers/audi-centre-careers.html">Click Here</a></p>
+    </section>
+
+    <section>
+      <header>
+        <h2>Audi in the UK</h2>
+      </header>
+      <!--Div that holds the map-->
+      <div id="map">
+      </div>
+    </section>
+
+    <!--Section that contains videos-->
+    <section>
+      <header>
+        <h2>Audi Videos</h2>
+      </header>
+
+      <div id="videos">
+        <div id="first-video">
+          <!--HTML native Video tag, with native controls-->
+          <video controls poster="content/images/audi-a8.jpg">
+            <source src="content/videos/audi-a8.mp4" type="video/mp4">
+              <!--Open source container format for media-->
+            <source src="content/videos/audi-a8.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div id="second-video">
+          <video controls poster="content/images/audi-rs7.jpg">
+            <source src="content/videos/audi-rs7.mp4" type="video/mp4">
+            <source src="content/videos/audi-rs7.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <!--Footer starts-->
+  <footer>
+
+    <div id="copyright-text">
+    <small>&copy; Copyright 2017, Mohammed Sheikh</small>
+    </div>
+
+    <div id="sitemap">
+      <a class="sitemap-link" href="index.html">Home</a>
+      <a class="sitemap-link" href="history.html">History of Audi</a>
+      <a class="sitemap-link" href="gallery.html">Gallery</a>
+      <a class="sitemap-link" href="current-lineup.html">Current Lineup</a>
+      <a class="sitemap-link" href="the-future.html">The Future</a>
+    </div>
+
+  </footer>
+
+  <!--JavaScript file is being referenced here-->
+  <script src="js/scripts.js"></script>
+  <!--Maps API script is being referenced here-->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSAIfrJlNHBhRZ4ubpULEMFmIL8bXRPYM&callback=initMap"></script>
+
+  </body>
 
 </html>

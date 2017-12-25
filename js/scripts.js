@@ -48,7 +48,7 @@ official code documentation*/
     /*Add listener with the function as parameter*/
     query.addListener(WidthChange);
     /*Call the WidthChange func and give the min width media as its parameter*/
-    WidthChange(mq);
+    WidthChange(query);
   }
 
   // function that handles media query change logic
