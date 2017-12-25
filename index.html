@@ -14,29 +14,32 @@
 <body>
   <!--Header of page-->
   <header>
-  <!--Div for main logo of website-->
-  <div id="logo">
-    <a href="index.html">
-      <img src="content/images/site-logo.png" alt="logo">
-    </a>
-  </div>
+    <!--Div for main logo of website-->
+    <div id="logo">
+      <a href="index.html">
+        <img src="content/images/site-logo.png" alt="logo">
+      </a>
+    </div>
 
   <!--Div for search form-->
-  <div id="search">
-	<input type="text" id="search-input" class="search-bar" placeholder="Search...">
-  <a class="search-button" href="#search-popup">
-  <i class="icon"></i></a>
-  </div>
+    <div id="search">
+      <input type="text" id="search-input" class="search-bar"
+      placeholder="Search...">
+      <a class="search-button" href="#search-popup">
+        <i class="icon"></i>
+      </a>
+    </div>
 
-  <!--Hamburger main menu-->
-  <a id="main-menu" href="#">
-    <img src="content/images/hamburger-menu.png" alt="main menu hamburger button">
-  </a>
+    <!--Hamburger main menu-->
+    <a id="main-menu" href="#">
+      <img src="content/images/hamburger-menu.png" alt="main menu">
+    </a>
 
   </header>
 
   <!--Navigation menu-->
   <nav id="nav-menu">
+
     <a href="index.html">Home</a>
     <a href="history.html">History of Audi</a>
     <a href="gallery.html">Gallery</a>
@@ -46,44 +49,51 @@
     <!--Div that holds the social media icons-->
     <div id="social-media">
       <a href="https://www.facebook.com/AudiUK/">
-        <img id="facebook" src="content/images/facebook-original.png" alt="facebook icon">
+        <img id="facebook" src="content/images/facebook-original.png"
+        alt="facebook icon" title="facebook">
       </a>
       <a href="https://twitter.com/audiuk?lang=en">
-        <img id="twitter" src="content/images/twitter-original.png" alt="twitter icon">
+        <img id="twitter" src="content/images/twitter-original.png"
+        alt="twitter icon" title="twitter">
       </a>
       <a href="https://www.instagram.com/audiuk/?hl=en">
-        <img id="instagram" src="content/images/instagram-original.png" alt="instagram icon">
+        <img id="instagram" src="content/images/instagram-original.png"
+        alt="instagram icon" title="instagram">
       </a>
       <a href="https://www.flickr.com/photos/audiag/">
-        <img id="flickr" src="content/images/flickr-original.png" alt="flickr icon">
+        <img id="flickr" src="content/images/flickr-original.png"
+        alt="flickr icon" title="flickr">
       </a>
       <a href="https://uk.linkedin.com/company/audi-uk">
-        <img id="linkedin" src="content/images/linkedin-original.png" alt="linkedin icon">
+        <img id="linkedin" src="content/images/linkedin-original.png"
+        alt="linkedin icon" title="linkedin">
       </a>
       <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
-        <img id="youtube" src="content/images/youtube-original.png" alt="youtube icon">
+        <img id="youtube" src="content/images/youtube-original.png"
+        alt="youtube icon" title="youtube">
       </a>
     </div>
 
   </nav>
 
-<!-- Modal popup that contains search bar -->
-<!--https://codepen.io/imprakash/pen/GgNMXO   -->
-<div id="search-popup" class="overlay">
-	<div class="popup">
-    <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
-    It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
-		<a class="close" aria-label="Close Account Info Modal Box" href="#">&times;</a>
-    <!--Div for search form-->
-    <div id="popup-search-bar">
-      <input type="text" id="search-input-popup" placeholder="Search...">
-      <a class="search-button-popup" href="#search-popup">
-        <i class="icon-popup">
-        </i>
+  <!-- Modal popup that contains search bar -->
+  <!--https://codepen.io/imprakash/pen/GgNMXO   -->
+  <div id="search-popup" class="overlay">
+    <div class="popup">
+      <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
+      It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
+      <a class="close" aria-label="Close Account Info Modal Box"
+      href="#">&times;
       </a>
+      <!--Div for search form-->
+      <div id="popup-search-bar">
+        <input type="text" id="search-input-popup" placeholder="Search...">
+        <a class="search-button-popup" href="#search-popup">
+          <i class="icon-popup"></i>
+        </a>
+      </div>
     </div>
-	</div>
-</div>
+  </div>
 
   <!--Main section of page-->
   <main>
@@ -172,5 +182,6 @@
   <!--Maps API script is being referenced here-->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSAIfrJlNHBhRZ4ubpULEMFmIL8bXRPYM&callback=initMap"></script>
 
-</body>
+  </body>
+
 </html>

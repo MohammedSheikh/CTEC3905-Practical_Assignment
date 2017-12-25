@@ -29,32 +29,38 @@ This IFFE function runs itself immediately*/
 
 })();
 
-/*This IIFE is used to move the social media div from one parent div to another when screen size changes.
-In the desktop view, the div will move from the nav to the header dynamically, code adapated from Mozilla Developer Network official code documentation*/
+/*This IIFE is used to move the social media div from one parent div to another
+when screen size changes. In the desktop view, the div will move from the nav
+to the header dynamically, code adapated from Mozilla Developer Network
+official code documentation*/
 (function(){
 
   /*var to store the div id that will move upon screen size change*/
   let socialNode = document.getElementById("social-media");
-  /*var to store the div id that will precede the div when after it has been moved*/
+  /*var to store the div id that will precede the div after it's been moved*/
   let searchNode = document.getElementById("search");
   /*var for the JS to watch for any screen size changes*/
-  const mq = window.matchMedia( "(min-width: 1000px)" );
+  const query = window.matchMedia("(min-width: 1000px)");
   let navMenu = document.getElementById("nav-menu");
 
   /*If screen width is minimum 1000px...*/
   if (matchMedia) {
-    mq.addListener(WidthChange);/*Add listener with the function as parameter*/
-    WidthChange(mq);/*Call the WidthChange func and give the min width media as its parameter*/
+    /*Add listener with the function as parameter*/
+    query.addListener(WidthChange);
+    /*Call the WidthChange func and give the min width media as its parameter*/
+    WidthChange(mq);
   }
 
   // function that handles media query change logic
-  function WidthChange(mq) {
+  function WidthChange(query) {
     /*If width is min 1000px...*/
-    if (mq.matches) {
+    if (query.matches) {
     /*Insert social media div into header, just after the existing search div*/
       searchNode.parentNode.insertBefore(socialNode, searchNode.nextSibling);
-    } else {
-      navMenu.appendChild(socialNode);/*If not just leave the social media div where it is*/
+    }
+    else {
+      /*If not, just leave the social media div where it is*/
+      navMenu.appendChild(socialNode);
     }
   }
 
@@ -64,10 +70,8 @@ In the desktop view, the div will move from the nav to the header dynamically, c
 function initMap() {
   //the latitude and logitude of the location
   let audiOffice = {lat: 52.070469, lng: -0.737313};
-
   //get the HTML id of the map on the webpage
   let audiMap = document.getElementById("map");
-
   // this sets the default location for when the map is first loaded
   let map = new google.maps.Map(audiMap, {
     zoom: 10,
@@ -82,7 +86,8 @@ function initMap() {
 
   //displays information regarding the map marker
   let locationInfo = new google.maps.InfoWindow({
-    content: "<b>Audi UK Headquarters</b> <p> Yeomans Drive Blakelands <p> MILTON KEYNES <p> MK14 5AN"
+    content: "<b>Audi UK Headquarters</b> <p> Yeomans Drive, \
+     Blakelands <p> MILTON KEYNES <p> MK14 5AN"
   });
 
   locationInfo.open(audiMap, markerAudi);
