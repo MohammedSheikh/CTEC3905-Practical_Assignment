@@ -281,9 +281,14 @@ a {
 /*Gallery page styles*/
 #audi-factories {
   margin:5px;
+  text-align: center;
 }
 #audi-factories img{
-  width:40%;
+  width:96%;
+  overflow:auto;
+  padding-top: 5px;
+  border: 3px solid #fff;
+  border-radius: 3px;
 }
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
@@ -367,6 +372,11 @@ a {
   }
   #sitemap a {
     font-size: 1em;
+  }
+  /*Gallery page styles*/
+  #audi-factories img{
+    width:48%;
+    overflow:auto;
   }
 }
 
