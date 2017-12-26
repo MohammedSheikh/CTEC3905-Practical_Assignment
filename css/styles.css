@@ -291,15 +291,28 @@ a {
   border-radius: 3px;
 }
 /*Slideshow styles*/
-.slides {
+.slideshow {
   position: relative;
+  margin:15px 0px;
 }
-.arrow-left{
+.slideshow img {
+  width:100%;
+}
+.arrow-left, .arrow-right {
+  background-color: #c0c0c0;
   position: absolute;
+  font-size: 1em;
+  border:2px solid #fff;
+  z-index: 99
+}
+.arrow-left:hover, .arrow-right:hover {
+  color:#fff;
+  background-color: #000;
+}
+.arrow-left {
   bottom: 50%;
 }
-.arrow-right{
-  position: absolute;
+.arrow-right {
   right:0;
   bottom:50%;
 }
