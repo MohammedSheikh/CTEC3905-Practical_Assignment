@@ -278,6 +278,13 @@ footer {
 a {
   text-decoration: none;
 }
+/*Gallery page styles*/
+#audi-factories {
+  margin:5px;
+}
+#audi-factories img{
+  width:40%;
+}
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
