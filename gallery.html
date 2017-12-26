@@ -104,11 +104,15 @@
       <header>
         <h2>Audi Slideshow</h2>
       </header>
-      <div class="slideshow">
-    <img src="content/images/audi-india.png" alt="dd" >
-    <img src="content/images/audi-ingolstadt.png" alt="dd" >
-    <img src="content/images/audi-mexico.png" alt="dd" >
-  </div>
+      <div class="slides">
+        <img class="mySlides" src="content/images/audi-india.png" style="width:100%">
+        <img class="mySlides" src="content/images/audi-ingolstadt.png" style="width:100%">
+        <img class="mySlides" src="content/images/audi-mexico.png" style="width:100%">
+        <img class="mySlides" src="content/images/audi-sydney.png" style="width:100%">
+
+        <button class="arrow-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="arrow-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
 
     </section>
 
@@ -145,6 +149,26 @@
     </div>
 
   </footer>
+
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 
   <!--JavaScript file is being referenced here-->
   <script src="js/scripts.js"></script>
