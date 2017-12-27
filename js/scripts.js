@@ -66,7 +66,7 @@ official code documentation*/
 
 })();
 
-//this func hides the other pics and shows the one that is active
+//this IIFE hides the other pics and shows the one that is active
 (function(){
 
   //back arrow button slideshow
