@@ -327,6 +327,17 @@ aside {
   background-color: pink;
   width:100%;
 }
+.audi-model {
+  width:96%;
+  border:3px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:5px;
+}
+
+
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -396,6 +407,10 @@ aside {
   /*slideshow styles*/
   .arrow-left, .arrow-right {
     font-size: 2em;
+  }
+  .audi-model{
+    background-color: pink;
+    width:20%;
   }
 }
 /* END FIRST BREAKPOINT */
@@ -492,17 +507,6 @@ aside {
   /*slideshow styles*/
   .arrow-left, .arrow-right {
     font-size: 4em;
-  }
-  /*Current Lineup page*/
-  article {
-    background-color: green;
-    width:50%;
-    float:left;
-  }
-  aside {
-    background-color: pink;
-    width:50%;
-    float:right;
   }
 }
 /* END SECOND BREAKPOINT */
