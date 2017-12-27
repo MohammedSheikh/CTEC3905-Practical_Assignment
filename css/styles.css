@@ -335,9 +335,17 @@ aside {
 #audi-models > div {
   border:3px solid #fff;
   border-radius: 3px;
-  margin: 5px auto
+  margin: 5px auto;
 }
-
+.audi-model-left, .audi-model-right {
+  text-align: center;
+}
+.audi-model-left p, .audi-model-right p {
+  color:pink;
+}
+.h2-flickr {
+  width:100%;
+}
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -408,27 +416,24 @@ aside {
   .arrow-left, .arrow-right {
     font-size: 2em;
   }
+  .audi-model-left, .audi-model-right {
+    width:48%;
+  }
   .audi-model-left {
     float: left;
-    width: 48%;
   }
   .audi-model-right {
     float: right;
-    width: 48%;
   }
-
   .audi-model-left img, .audi-model-right img {
-        max-width: 100%;
-        height: auto;
-
-    }
-
-    #audi-models {
-        content:"";
-        display: table;
-        clear: both;
-    }
-
+    max-width: 100%;
+    height: auto;
+  }
+  #audi-models {
+    content:"";
+    display: table;
+    clear: both;
+  }
 }
 /* END FIRST BREAKPOINT */
 
@@ -457,6 +462,12 @@ aside {
 @media screen and (min-width: 1000px) {
   header {
     width: 90%;
+  }
+  #x{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   #search {
   	width:50%;
@@ -525,21 +536,23 @@ aside {
   .arrow-left, .arrow-right {
     font-size: 4em;
   }
+  .audi-model-left, .audi-model-right {
+    width:32%;
+  }
   .audi-model-left {
     float: left;
-    width: 30%;
   }
   .audi-model-right {
     float: left;
-    width: 30%;
   }
   article {
     float: left;
     width:70%;
   }
   aside {
-overflow: auto;
-    width:20%;
+    overflow: auto;
+    width:30%;
+
   }
 
 }
