@@ -297,6 +297,8 @@ a {
 }
 .slideshow img {
   width:100%;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .arrow-left, .arrow-right {
   background-color: #c0c0c0;

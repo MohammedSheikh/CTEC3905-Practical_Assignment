@@ -105,14 +105,15 @@
         <h2>Audi Slideshow</h2>
       </header>
       <div class="slideshow">
-        <img class="mySlides" src="content/images/slideshow-audi-quattro-white.jpg">
-        <img class="mySlides" src="content/images/slideshow-audi-s8-v10.jpg" >
-        <img class="mySlides" src="content/images/slideshow-audi-sq7.jpg" >
-        <img class="mySlides" src="content/images/slideshow-audi-s8.jpg" >
-        <img class="mySlides" src="content/images/slideshow-audi-quattro.jpg" >
-
-        <button class="arrow-left" onclick="plusDivs(-1)"><b>&#10094;</b></button>
-        <button class="arrow-right" onclick="plusDivs(1)"><b>&#10095;</b></button>
+        <img class="slides" src="content/images/slideshow-audi-quattro-white.jpg">
+        <img class="slides" src="content/images/slideshow-audi-s8-v10.jpg">
+        <img class="slides" src="content/images/slideshow-audi-sq7.jpg">
+        <img class="slides" src="content/images/slideshow-audi-s8.jpg">
+        <img class="slides" src="content/images/slideshow-audi-quattro.jpg">
+        <!--Left arrow for slideshow-->
+        <button id="back-arrow" class="arrow-left"><b>&#10094;</b></button>
+        <!--right arrow for slideshow-->
+        <button id="forward-arrow" class="arrow-right"><b>&#10095;</b></button>
       </div>
 
     </section>
@@ -150,26 +151,6 @@
     </div>
 
   </footer>
-
-  <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
 
   <!--JavaScript file is being referenced here-->
   <script src="js/scripts.js"></script>
