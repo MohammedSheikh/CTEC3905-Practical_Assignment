@@ -327,12 +327,15 @@ aside {
   background-color: pink;
   width:100%;
 }
-.audi-model {
-  width:96%;
+#audi-models {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+#audi-models > div {
   border:3px solid #fff;
   border-radius: 3px;
-  text-align: center;
-  margin:5px auto;
+  margin: 5px auto
 }
 
 
@@ -405,10 +408,27 @@ aside {
   .arrow-left, .arrow-right {
     font-size: 2em;
   }
-  .audi-model{
-    background-color: pink;
-    width:20%;
+  .audi-model-left {
+    float: left;
+    width: 48%;
   }
+  .audi-model-right {
+    float: right;
+    width: 48%;
+  }
+
+  .audi-model-left img, .audi-model-right img {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    #audi-models {
+        content:"";
+        display: table;
+        clear: both;
+    }
+
 }
 /* END FIRST BREAKPOINT */
 
@@ -505,5 +525,22 @@ aside {
   .arrow-left, .arrow-right {
     font-size: 4em;
   }
+  .audi-model-left {
+    float: left;
+    width: 30%;
+  }
+  .audi-model-right {
+    float: left;
+    width: 30%;
+  }
+  article {
+    float: left;
+    width:70%;
+  }
+  aside {
+overflow: auto;
+    width:20%;
+  }
+
 }
 /* END SECOND BREAKPOINT */
