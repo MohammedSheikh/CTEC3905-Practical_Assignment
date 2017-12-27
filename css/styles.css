@@ -384,6 +384,10 @@ a {
     display: inline;
     font-size: 0.9em;
   }
+  /*slideshow styles*/
+  .arrow-left, .arrow-right {
+    font-size: 2em;
+  }
 }
 /* END FIRST BREAKPOINT */
 
@@ -475,6 +479,10 @@ a {
   }
   footer {
     width: 90%;
+  }
+  /*slideshow styles*/
+  .arrow-left, .arrow-right {
+    font-size: 4em;
   }
 }
 /* END SECOND BREAKPOINT */
