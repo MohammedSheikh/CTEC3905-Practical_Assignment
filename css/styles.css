@@ -318,6 +318,15 @@ a {
   right:0;
   bottom:50%;
 }
+/*Current Lineup page*/
+article {
+  background-color: green;
+  width:100%;
+}
+aside {
+  background-color: pink;
+  width:100%;
+}
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -483,6 +492,17 @@ a {
   /*slideshow styles*/
   .arrow-left, .arrow-right {
     font-size: 4em;
+  }
+  /*Current Lineup page*/
+  article {
+    background-color: green;
+    width:50%;
+    float:left;
+  }
+  aside {
+    background-color: pink;
+    width:50%;
+    float:right;
   }
 }
 /* END SECOND BREAKPOINT */
