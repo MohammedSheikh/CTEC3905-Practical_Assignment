@@ -66,32 +66,50 @@ official code documentation*/
 
 })();
 
+//this func hides the other pics and shows the one that is active
 (function(){
 
+  //back arrow button slideshow
   let backArrow = document.getElementById("back-arrow");
+  //forward arrow button slideshow
   let forwardArrow = document.getElementById("forward-arrow");
-
+  //set the slideshow to the first picture
   let slideIndex = 1;
+  //call the showDivs() method to display the first picture
   showDivs(slideIndex);
-
+  //when user clicks arrow buttons, call this method
   function plusDivs(n) {
+    //this func either subtracts from or adds to the first pic (slideIndex)
     showDivs(slideIndex += n);
   }
-
+  //this func hides the other pics and shows the one that is active
   function showDivs(n) {
     let i;
     let x = document.getElementsByClassName("slides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+    //if slideIndex is higher than amount of items, set it to zero
+    if (n > x.length) {
+      slideIndex = 1;
     }
-    x[slideIndex-1].style.display = "block";
+    //if slideIndex is less than 1, set it to amount of items
+    if (n < 1) {
+      slideIndex = x.length;
+    }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    //check if slideshow element exists..
+    if(x[slideIndex - 1]) {
+      x[slideIndex-1].style.display = "block";
+    }
+  };
+  //if there is a back arrow element, add event listener
+  if (backArrow) {
+    backArrow.addEventListener("click", function (){plusDivs(-1)});
   }
-
-  backArrow.addEventListener("click", function (){plusDivs(-1)});
-  forwardArrow.addEventListener("click", function (){plusDivs(1)});
-
+  //if there is a forward arrow element, add event listener
+  if (forwardArrow) {
+    forwardArrow.addEventListener("click", function (){plusDivs(1)});
+  }
 })();
 
 //function that implements Google Maps API into the website
