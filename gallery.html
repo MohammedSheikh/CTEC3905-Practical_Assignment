@@ -7,25 +7,23 @@
   <title>Audi Fansite- Gallery</title>
   <!--Links the stylesheet-->
   <link rel="stylesheet" href="css/styles.css">
-  <!--The meta tag allows us to control the viewport which controls the page's
-  scaling and dimensions-->
+  <!--The meta tag allows us to control the viewport which controls the page's scaling and dimensions-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!--Header of page-->
   <header>
     <!--Div for main logo of website-->
-    <div id="logo">
-      <a href="index.html">
+    <div id="logo" role="banner">
+      <a href="index.html" aria-label="Go to home">
         <img src="content/images/site-logo.png" alt="logo">
       </a>
     </div>
 
   <!--Div for search form-->
     <div id="search">
-      <input type="text" id="search-input" class="search-bar"
-      placeholder="Search...">
-      <a class="search-button" href="#search-popup">
+      <input type="text" id="search-input" placeholder="Search...">
+      <a class="search-button" aria-label="Search" href="#search-popup">
         <i class="icon"></i>
       </a>
     </div>
@@ -82,11 +80,10 @@
     <div class="popup">
       <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
       It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
-      <a class="close" aria-label="Close Account Info Modal Box"
-      href="#">&times;
+      <a class="close" aria-label="Close popup box" href="#">&times;
       </a>
-      <!--Div for search form-->
-      <div id="popup-search-bar">
+      <!--Div for search feature-->
+      <div id="search-bar-popup">
         <input type="text" id="search-input-popup" placeholder="Search...">
         <a class="search-button-popup" href="#search-popup">
           <i class="icon-popup"></i>
