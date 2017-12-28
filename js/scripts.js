@@ -85,21 +85,21 @@ official code documentation*/
   //this func hides the other pics and shows the one that is active
   function showDivs(n) {
     let i;
-    let x = document.getElementsByClassName("slides");
+    let slides = document.getElementsByClassName("slides");
     //if slideIndex is higher than amount of items, set it to zero
-    if (n > x.length) {
+    if (n > slides.length) {
       slideIndex = 1;
     }
     //if slideIndex is less than 1, set it to amount of items
     if (n < 1) {
-      slideIndex = x.length;
+      slideIndex = slides.length;
     }
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
     //check if slideshow element exists..
-    if(x[slideIndex - 1]) {
-      x[slideIndex-1].style.display = "block";
+    if(slides[slideIndex - 1]) {
+      slides[slideIndex-1].style.display = "block";
     }
   };
   //if there is a back arrow element, add event listener
