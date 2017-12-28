@@ -343,7 +343,7 @@ aside {
 .audi-model-left p, .audi-model-right p {
   color:pink;
 }
-.audi-model-left figure, .audi-model-right figure{
+.audi-model-left figure, .audi-model-right figure {
   width:100%;
   text-align: center;
   margin-left: auto;
@@ -351,22 +351,30 @@ aside {
   margin-top: 0px;
 }
 figure img {
-  margin-bottom: -4em;
+  margin-bottom: -6em;
   display: block;
 }
-figure:hover figcaption {
-  transform: translateY(0em);
-  /* background: rgba( 255, 255, 255, .78 ); */
-  opacity: .78;
-}
+/* styles the figcaption element when the page first loads. The
+  `transition` property simply "prepares" the element for a style
+  transition - it does NOT trigger the transition.
+  `opacity` affects the WHOLE element - at `.78` text less is harsh when
+  visible. A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text
+  with a line-height of 1em nicely. For more, change the values.*/
 figcaption {
-  box-sizing: border-box;
-  line-height: 1.2em;
+  line-height: 1em;
   padding: .25em;
-  transform: translateY(4em);
+  transform: translateY(1em);
   background: #fff;
   opacity: 0;
   transition: all .5s;
+  text-align: justify;
+}
+/*These styles are applied to the `figcaption` element when hovering
+  over the`figure` element. The `transition` property on `figcaption`
+  above is then applied to `all` these hover styles, over 0.5 seconds.*/
+figure:hover figcaption {
+  transform: translateY(0em);
+  opacity: .78;
 }
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
