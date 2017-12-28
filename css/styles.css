@@ -320,11 +320,11 @@ a {
 }
 /*Current Lineup page*/
 article {
-  background-color: green;
+  background-color: #808080;
   width:100%;
 }
 aside {
-  background-color: pink;
+  background-color: #808080;
   width:100%;
 }
 #audi-models {
@@ -340,8 +340,12 @@ aside {
 .audi-model-left, .audi-model-right {
   text-align: center;
 }
+.audi-model-left h2, .audi-model-right h2 {
+  background-color: #c0c0c0;
+}
 .audi-model-left p, .audi-model-right p {
-  color:pink;
+  font-size:1.5em;
+  color:#fff;
 }
 .audi-model-left figure, .audi-model-right figure {
   width:100%;
@@ -351,8 +355,9 @@ aside {
   margin-top: 0px;
 }
 figure img {
-  margin-bottom: -6em;
+  margin-bottom: -4em;
   display: block;
+  padding-bottom: 4px;
 }
 /* styles the figcaption element when the page first loads. The
   `transition` property simply "prepares" the element for a style
@@ -364,7 +369,8 @@ figcaption {
   line-height: 1em;
   padding: .25em;
   transform: translateY(1em);
-  background: #fff;
+  background: #000;
+  color:#fff;
   opacity: 0;
   transition: all .5s;
   text-align: justify;
