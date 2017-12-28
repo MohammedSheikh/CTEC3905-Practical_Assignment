@@ -380,7 +380,20 @@ figcaption {
   above is then applied to `all` these hover styles, over 0.5 seconds.*/
 figure:hover figcaption {
   transform: translateY(0em);
-  opacity: .78;
+  opacity: 1;
+}
+#go-to-top {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:95%;
+}
+#go-to-top img {
+  width:40px;
+  height:40px;
+}
+#go-to-top img:hover {
+  content: url('../content/images/arrow-top-hover.png');
 }
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
