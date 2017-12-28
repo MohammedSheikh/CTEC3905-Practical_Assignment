@@ -343,10 +343,42 @@ aside {
 .audi-model-left p, .audi-model-right p {
   color:pink;
 }
-.h2-flickr {
-  width:100%;
+figcaption {
+  box-sizing: border-box;
+  height: 4em;
+  line-height: 1.2em;
+  padding: .25em;
+  transform: translateY(4em);
+  background: #fff;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 0;
+  transition: all .5s;
 }
 
+/*
+  These styles are applied to the `figcaption` element when hovering
+  over the`figure` element. The `transition` property on `figcaption`
+  above is then applied to `all` these hover styles, over 0.5 seconds.
+*/
+figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+}
+figure {
+  width: 200px;
+  background: #aaa;
+  border: 2px solid #999;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+  height: 300px;
+  background: #eee;
+  margin-bottom: -4em;
+  display: block;
+}
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header {
