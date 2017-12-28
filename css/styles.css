@@ -340,16 +340,24 @@ aside {
 .audi-model-left, .audi-model-right {
   text-align: center;
 }
-.audi-model-left figure{
+.audi-model-left p, .audi-model-right p {
+  color:pink;
+}
+.audi-model-left figure, .audi-model-right figure{
   width:100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-
 }
-.audi-model-left p, .audi-model-right p {
-  color:pink;
+figure img {
+  margin-bottom: -4em;
+  display: block;
+}
+figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
 }
 figcaption {
   box-sizing: border-box;
@@ -357,23 +365,8 @@ figcaption {
   padding: .25em;
   transform: translateY(4em);
   background: #fff;
-  /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
   transition: all .5s;
-}
-figure:hover figcaption {
-  transform: translateY(0em);
-  /* background: rgba( 255, 255, 255, .78 ); */
-  opacity: .78;
-}
-figure {
-
-
-}
-figure img {
-  margin-bottom: -4em;
-  display: block;
-
 }
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
