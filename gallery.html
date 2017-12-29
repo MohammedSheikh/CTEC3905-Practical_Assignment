@@ -1,168 +1,161 @@
 <!DOCTYPE html>
 <!--Language of HTML-->
 <html lang="en">
+
 <head>
-  <!--Specifies character encoding-->
-  <meta charset="utf-8">
-  <title>Audi Fansite- Gallery</title>
-  <!--Links the stylesheet-->
-  <link rel="stylesheet" href="css/styles.css">
-  <!--The meta tag allows us to control the viewport which controls the page's scaling and dimensions-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Specifies character encoding-->
+    <meta charset="utf-8">
+    <title>Audi Fansite- Gallery</title>
+    <!--Links the stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--The meta tag allows us to control the viewport which controls the page's scaling and dimensions-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-  <!--Header of page-->
-  <header id="top-header">
-    <!--Div for main logo of website-->
-    <div id="logo" role="banner">
-      <a href="index.html" aria-label="Go to home">
+    <!--Header of page-->
+    <header id="top-header">
+        <!--Div for main logo of website-->
+        <div id="logo" role="banner">
+            <a href="index.html" aria-label="Go to home">
         <img src="content/images/site-logo.png" alt="logo">
       </a>
-    </div>
+        </div>
 
-  <!--Div for search form-->
-    <div id="search">
-      <input type="text" id="search-input" placeholder="Search...">
-      <a class="search-button" aria-label="Search" href="#search-popup">
+        <!--Div for search form-->
+        <div id="search">
+            <input type="text" id="search-input" placeholder="Search...">
+            <a class="search-button" aria-label="Search" href="#search-popup">
         <i class="icon"></i>
       </a>
-    </div>
+        </div>
 
-    <!--Hamburger main menu-->
-    <a id="main-menu" href="#">
+        <!--Hamburger main menu-->
+        <a id="main-menu" href="#">
       <img src="content/images/hamburger-menu.png" alt="main menu">
     </a>
 
-  </header>
+    </header>
 
-  <!--Navigation menu-->
-  <nav id="nav-menu">
+    <!--Navigation menu-->
+    <nav id="nav-menu">
 
-    <a href="index.html">Home</a>
-    <a href="history.html">History of Audi</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="current-lineup.html">Current Lineup</a>
-    <a href="the-future.html">The Future</a>
+        <a href="index.html">Home</a>
+        <a href="history.html">History of Audi</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="current-lineup.html">Current Lineup</a>
+        <a href="the-future.html">The Future</a>
 
-    <!--Div that holds the social media icons-->
-    <div id="social-media">
-      <a href="https://www.facebook.com/AudiUK/">
+        <!--Div that holds the social media icons-->
+        <div id="social-media">
+            <a href="https://www.facebook.com/AudiUK/">
         <img id="facebook" src="content/images/facebook-original.png"
         alt="facebook icon" title="facebook">
       </a>
-      <a href="https://twitter.com/audiuk?lang=en">
+            <a href="https://twitter.com/audiuk?lang=en">
         <img id="twitter" src="content/images/twitter-original.png"
         alt="twitter icon" title="twitter">
       </a>
-      <a href="https://www.instagram.com/audiuk/?hl=en">
+            <a href="https://www.instagram.com/audiuk/?hl=en">
         <img id="instagram" src="content/images/instagram-original.png"
         alt="instagram icon" title="instagram">
       </a>
-      <a href="https://www.flickr.com/photos/audiag/">
+            <a href="https://www.flickr.com/photos/audiag/">
         <img id="flickr" src="content/images/flickr-original.png"
         alt="flickr icon" title="flickr">
       </a>
-      <a href="https://uk.linkedin.com/company/audi-uk">
+            <a href="https://uk.linkedin.com/company/audi-uk">
         <img id="linkedin" src="content/images/linkedin-original.png"
         alt="linkedin icon" title="linkedin">
       </a>
-      <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
+            <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
         <img id="youtube" src="content/images/youtube-original.png"
         alt="youtube icon" title="youtube">
       </a>
-    </div>
+        </div>
 
-  </nav>
+    </nav>
 
-  <!-- Modal popup that contains search bar -->
-  <!--https://codepen.io/imprakash/pen/GgNMXO   -->
-  <div id="search-popup" class="overlay">
-    <div class="popup">
-      <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
+    <!-- Modal popup that contains search bar -->
+    <!--https://codepen.io/imprakash/pen/GgNMXO   -->
+    <div id="search-popup" class="overlay">
+        <div class="popup">
+            <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
       It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
-      <a class="close" aria-label="Close popup box" href="#">&times;
+            <a class="close" aria-label="Close popup box" href="#">&times;
       </a>
-      <!--Div for search feature-->
-      <div id="search-bar-popup">
-        <input type="text" id="search-input-popup" placeholder="Search...">
-        <a class="search-button-popup" href="#search-popup">
+            <!--Div for search feature-->
+            <div id="search-bar-popup">
+                <input type="text" id="search-input-popup" placeholder="Search...">
+                <a class="search-button-popup" href="#search-popup">
           <i class="icon-popup"></i>
         </a>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!--Main section of page-->
-  <main>
+    <!--Main section of page-->
+    <main>
 
-    <h1>GALLERY</h1>
+        <h1>GALLERY</h1>
 
-    <section>
-      <header>
-        <h2>Audi Slideshow</h2>
-      </header>
-      <div class="slideshow">
-        <img class="slides" src="content/images/slideshow-audi-quattro-white.jpg" aria-label="Image of 1987 Audi Quattro"
-        alt="Audi Quattro" title="1987 Audi Quattro">
-        <img class="slides" src="content/images/slideshow-audi-s8-v10.jpg" aria-label="Image of Audi S8 V10"
-        alt="Audi S8 V10" title="2006 Audi S8 V10">
-        <img class="slides" src="content/images/slideshow-audi-sq7.jpg" aria-label="Image of Audi SQ7 4X4"
-        alt="Audi SQ7" title="Audi SQ7">
-        <img class="slides" src="content/images/slideshow-audi-s8.jpg" aria-label="Image of Audi S8 Plus MTM"
-        alt="Audi S8+ MTM" title="2014 Audi S8 Plus MTM">
-        <img class="slides" src="content/images/slideshow-audi-quattro.jpg" aria-label="Image of 1980 Audi Quattro rally car"
-        alt="Audi Quattro rally" title="1980 Audi Quattro rally car">
-        <!--Left arrow for slideshow-->
-        <button id="back-arrow" class="arrow-left"><b>&#10094;</b></button>
-        <!--right arrow for slideshow-->
-        <button id="forward-arrow" class="arrow-right"><b>&#10095;</b></button>
-      </div>
+        <section>
+            <header>
+                <h2>Audi Slideshow</h2>
+            </header>
+            <div class="slideshow">
+                <img class="slides" src="content/images/slideshow-audi-quattro-white.jpg" aria-label="Image of 1987 Audi Quattro" alt="Audi Quattro" title="1987 Audi Quattro">
+                <img class="slides" src="content/images/slideshow-audi-s8-v10.jpg" aria-label="Image of Audi S8 V10" alt="Audi S8 V10" title="2006 Audi S8 V10">
+                <img class="slides" src="content/images/slideshow-audi-sq7.jpg" aria-label="Image of Audi SQ7 4X4" alt="Audi SQ7" title="Audi SQ7">
+                <img class="slides" src="content/images/slideshow-audi-s8.jpg" aria-label="Image of Audi S8 Plus MTM" alt="Audi S8+ MTM" title="2014 Audi S8 Plus MTM">
+                <img class="slides" src="content/images/slideshow-audi-quattro.jpg" aria-label="Image of 1980 Audi Quattro rally car" alt="Audi Quattro rally" title="1980 Audi Quattro rally car">
+                <!--Left arrow for slideshow-->
+                <button id="back-arrow" class="arrow-left"><b>&#10094;</b></button>
+                <!--right arrow for slideshow-->
+                <button id="forward-arrow" class="arrow-right"><b>&#10095;</b></button>
+            </div>
 
-    </section>
+        </section>
 
-    <section>
-      <header>
-        <h2>Around The World</h2>
-      </header>
-      <div id="audi-factories">
-        <img src="content/images/audi-india.png" aria-label="Image of Audi India factory"
-        alt="Audi India factory" title="Audi factory in Aurangabad, India">
-        <img src="content/images/audi-ingolstadt.png" aria-label="Image of Audi Germany factory"
-        alt="Audi Germany factory" title="Audi factory in Ingolstadt, Germany">
-        <img src="content/images/audi-mexico.png" aria-label="Image of Audi Mexico factory"
-        alt="Audi Mexico factory" title="Audi factory in San José Chiapa, Mexico">
-        <img src="content/images/audi-sydney.png" aria-label="Image of Audi Sydney factory"
-        alt="Audi Australia factory" title="Audi site in Sydney, Australia">
-      </div>
-    </section>
-  </main>
+        <section>
+            <header>
+                <h2>Around The World</h2>
+            </header>
+            <div id="audi-factories">
+                <img src="content/images/audi-india.png" aria-label="Image of Audi India factory" alt="Audi India factory" title="Audi factory in Aurangabad, India">
+                <img src="content/images/audi-ingolstadt.png" aria-label="Image of Audi Germany factory" alt="Audi Germany factory" title="Audi factory in Ingolstadt, Germany">
+                <img src="content/images/audi-mexico.png" aria-label="Image of Audi Mexico factory" alt="Audi Mexico factory" title="Audi factory in San José Chiapa, Mexico">
+                <img src="content/images/audi-sydney.png" aria-label="Image of Audi Sydney factory" alt="Audi Australia factory" title="Audi site in Sydney, Australia">
+            </div>
+        </section>
+    </main>
 
-  <!--Footer starts-->
-  <footer>
+    <!--Footer starts-->
+    <footer>
 
-    <div id="go-to-top">
-      <a href="#top-header">
+        <div id="go-to-top">
+            <a href="#top-header">
         <img src="content/images/arrow-top.png" alt="Arrow to top">
       </a>
-    </div>
+        </div>
 
-    <div id="copyright-text">
-    <small>&copy; Copyright 2017, Mohammed Sheikh</small>
-    </div>
+        <div id="copyright-text">
+            <small>&copy; Copyright 2017, Mohammed Sheikh</small>
+        </div>
 
-    <div id="sitemap">
-      <a class="sitemap-link" href="index.html">Home</a>
-      <a class="sitemap-link" href="history.html">History of Audi</a>
-      <a class="sitemap-link" href="gallery.html">Gallery</a>
-      <a class="sitemap-link" href="current-lineup.html">Current Lineup</a>
-      <a class="sitemap-link" href="the-future.html">The Future</a>
-    </div>
+        <div id="sitemap">
+            <a class="sitemap-link" href="index.html">Home</a>
+            <a class="sitemap-link" href="history.html">History of Audi</a>
+            <a class="sitemap-link" href="gallery.html">Gallery</a>
+            <a class="sitemap-link" href="current-lineup.html">Current Lineup</a>
+            <a class="sitemap-link" href="the-future.html">The Future</a>
+        </div>
 
-  </footer>
+    </footer>
 
-  <!--JavaScript file is being referenced here-->
-  <script src="js/scripts.js"></script>
+    <!--JavaScript file is being referenced here-->
+    <script src="js/scripts.js"></script>
 
-  </body>
+</body>
 
 </html>

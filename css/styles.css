@@ -235,6 +235,7 @@ section {
 section p {
   padding: 3px 8px;
 }
+/*Div that holds the map feature*/
 #map {
   width: 100%;
   background-color: #808080;
@@ -242,6 +243,7 @@ section p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+/*Div that holds the HTML videos*/
 #videos {
   width: 100%;
   display: flex;
@@ -283,7 +285,7 @@ a {
   margin:5px;
   text-align: center;
 }
-#audi-factories img{
+#audi-factories img {
   width:96%;
   overflow:auto;
   padding-top: 5px;
@@ -300,6 +302,7 @@ a {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
+/*slideshow arrow buttons*/
 .arrow-left, .arrow-right {
   background-color: #c0c0c0;
   position: absolute;
@@ -318,7 +321,7 @@ a {
   right:0;
   bottom:50%;
 }
-/*Current Lineup page*/
+/*'Current Lineup' page*/
 article {
   background-color: #808080;
   width:100%;
@@ -414,7 +417,6 @@ form label, form input {
 form label {
   color:#fff;
   margin-top: 5px;
-
 }
 form input {
   border: 2px solid #000;
@@ -423,7 +425,6 @@ form input {
 }
 #flickr-content img {
   margin: 5px auto;
-
 }
 #future-concepts {
   background-color: #808080;
@@ -436,75 +437,73 @@ form input {
   color:#fff;
   background-color: #000;
 }
+/*Makes use of nth child- all odd numbered elements within this div will get
+following styles*/
 #future-concepts p:nth-child(odd) {
-    background-color: #c0c0c0;
-    color:#000;
+  background-color: #c0c0c0;
+  color:#000;
 }
+/*Makes use of nth child- all even numbered elements within this div will get
+following styles*/
 #future-concepts p:nth-child(even) {
-    background-color: #fff;
-    color:#000;
+  background-color: #fff;
+  color:#000;
 }
+/*Pseudo element allows content to be introduced*/
 .timeline:before {
-      left: 8px;
-      width: 2px;
-      background-color:#fff;
-   }
-   .timeline-block {
-      width: 100%;
-      margin-bottom: 30px;
-   }
-   .timeline-block-right {
-      float: none;
-   }
-
-   .timeline-block-left {
-      float: none;
-      direction:ltr;
-   }
-   .timeline {
-    width: 80%;
-    padding: 50px 0;
-    margin: 50px auto;
-    position: relative;
-    overflow: hidden;
-
-   }
-   .marker {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    background: #000;
-    margin-top: 10px;
-    z-index: 9999;
-   }
-
-   .timeline-content {
-    width: 95%;
-    padding: 0 15px;
-    color: #666;
-   }
-
-   .timeline-content h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 25px;
-    font-weight: 500;
-    color:#000;
-   }
-
-   .timeline-content span {
-    font-size: 15px;
-    color: #fff;
-   }
-
-   .timeline-content p {
-    font-size: 14px;
-    line-height: 1.5em;
-    word-spacing: 1px;
-    color: #000;
-   }
-
+  left: 8px;
+  width: 2px;
+  background-color:#fff;
+}
+.timeline-block {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.timeline-block-right {
+  float: none;
+}
+.timeline-block-left {
+  float: none;
+  direction:ltr;
+}
+.timeline {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #000;
+  margin-top: 10px;
+  z-index: 9999;
+}
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666;
+}
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  color:#000;
+}
+.timeline-content span {
+  font-size: 15px;
+  color: #fff;
+}
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #000;
+}
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -532,8 +531,8 @@ form input {
   .search-button {
     position: static;
     margin-left: 0px;
-	border: 2px solid #808080;
-	border-radius: 5px;
+	  border: 2px solid #808080;
+	  border-radius: 5px;
   }
   nav {
     width: 95%;
@@ -593,7 +592,6 @@ form input {
     display: table;
     clear: both;
   }
-
 }
 /* END FIRST BREAKPOINT */
 
@@ -616,33 +614,30 @@ form input {
     width:48%;
     overflow:auto;
   }
-
-.timeline:before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 50%;
-   margin-left: -1px;
-   width: 2px;
-   height: 100%;
-   background: #fff;
-   z-index: 1;
-}
-
-.timeline-block {
-   width: calc(50% + 8px);
-   display: flex;
-   justify-content: space-between;
-   clear: both;
-}
-.timeline-block-right {
-   float: right;
-}
-
-.timeline-block-left {
-   float: left;
-   direction: rtl
- }
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+  }
+  .timeline-block {
+    width: calc(50% + 8px);
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+  }
+  .timeline-block-right {
+    float: right;
+  }
+  .timeline-block-left {
+    float: left;
+    direction: rtl;
+  }
 }
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
@@ -672,22 +667,22 @@ form input {
     background-color:transparent;
   }
   #social-media {
-	display: flex;
+	  display: flex;
     flex-wrap:wrap;
-	width:130px;
+	  width:130px;
     margin-bottom:8px;
   }
   #social-media a {
     flex-grow: 1;
-	width: calc(100% * (1/3) - 5px - 5px);
-	text-align:center;
+	  width: calc(100% * (1/3) - 5px - 5px);
+	  text-align:center;
   }
   #social-media a:hover {
     background-color: transparent;
     color:transparent;
   }
   #social-media img {
-	margin-top:16px;
+	  margin-top:16px;
     width:30px;
     height:30px;
   }

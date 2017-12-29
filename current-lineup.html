@@ -1,273 +1,265 @@
 <!DOCTYPE html>
 <!--Language of HTML-->
 <html lang="en">
+
 <head>
-  <!--Specifies character encoding-->
-  <meta charset="utf-8">
-  <title>Audi Fansite- Current Lineup</title>
-  <!--Links the stylesheet-->
-  <link rel="stylesheet" href="css/styles.css">
-  <!--The meta tag allows us to control the viewport which controls the page's scaling and dimensions-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Specifies character encoding-->
+    <meta charset="utf-8">
+    <title>Audi Fansite- Current Lineup</title>
+    <!--Links the stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--The meta tag allows us to control the viewport which controls the page's scaling and dimensions-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-  <!--Header of page-->
-  <header id="top-header">
-    <!--Div for main logo of website-->
-    <div id="logo" role="banner">
-      <a href="index.html" aria-label="Go to home">
+    <!--Header of page-->
+    <header id="top-header">
+        <!--Div for main logo of website-->
+        <div id="logo" role="banner">
+            <a href="index.html" aria-label="Go to home">
         <img src="content/images/site-logo.png" alt="logo">
       </a>
-    </div>
+        </div>
 
-  <!--Div for search form-->
-    <div id="search">
-      <input type="text" id="search-input" placeholder="Search...">
-      <a class="search-button" aria-label="Search" href="#search-popup">
+        <!--Div for search form-->
+        <div id="search">
+            <input type="text" id="search-input" placeholder="Search...">
+            <a class="search-button" aria-label="Search" href="#search-popup">
         <i class="icon"></i>
       </a>
-    </div>
+        </div>
 
-    <!--Hamburger main menu-->
-    <a id="main-menu" href="#">
+        <!--Hamburger main menu-->
+        <a id="main-menu" href="#">
       <img src="content/images/hamburger-menu.png" alt="main menu">
     </a>
 
-  </header>
+    </header>
 
-  <!--Navigation menu-->
-  <nav id="nav-menu">
+    <!--Navigation menu-->
+    <nav id="nav-menu">
 
-    <a href="index.html">Home</a>
-    <a href="history.html">History of Audi</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="current-lineup.html">Current Lineup</a>
-    <a href="the-future.html">The Future</a>
+        <a href="index.html">Home</a>
+        <a href="history.html">History of Audi</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="current-lineup.html">Current Lineup</a>
+        <a href="the-future.html">The Future</a>
 
-    <!--Div that holds the social media icons-->
-    <div id="social-media">
-      <a href="https://www.facebook.com/AudiUK/">
+        <!--Div that holds the social media icons-->
+        <div id="social-media">
+            <a href="https://www.facebook.com/AudiUK/">
         <img id="facebook" src="content/images/facebook-original.png"
         alt="facebook icon" title="facebook">
       </a>
-      <a href="https://twitter.com/audiuk?lang=en">
+            <a href="https://twitter.com/audiuk?lang=en">
         <img id="twitter" src="content/images/twitter-original.png"
         alt="twitter icon" title="twitter">
       </a>
-      <a href="https://www.instagram.com/audiuk/?hl=en">
+            <a href="https://www.instagram.com/audiuk/?hl=en">
         <img id="instagram" src="content/images/instagram-original.png"
         alt="instagram icon" title="instagram">
       </a>
-      <a href="https://www.flickr.com/photos/audiag/">
+            <a href="https://www.flickr.com/photos/audiag/">
         <img id="flickr" src="content/images/flickr-original.png"
         alt="flickr icon" title="flickr">
       </a>
-      <a href="https://uk.linkedin.com/company/audi-uk">
+            <a href="https://uk.linkedin.com/company/audi-uk">
         <img id="linkedin" src="content/images/linkedin-original.png"
         alt="linkedin icon" title="linkedin">
       </a>
-      <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
+            <a href="https://www.youtube.com/channel/UCyFFjOypSKO83N9TEIxwuqw">
         <img id="youtube" src="content/images/youtube-original.png"
         alt="youtube icon" title="youtube">
       </a>
-    </div>
+        </div>
 
-  </nav>
+    </nav>
 
-  <!-- Modal popup that contains search bar -->
-  <!--https://codepen.io/imprakash/pen/GgNMXO   -->
-  <div id="search-popup" class="overlay">
-    <div class="popup">
-      <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
+    <!-- Modal popup that contains search bar -->
+    <!--https://codepen.io/imprakash/pen/GgNMXO   -->
+    <div id="search-popup" class="overlay">
+        <div class="popup">
+            <!--Close button within overlay-The '&times' is the multiplication symbol for HTML5,
       It is used instead of the letter 'x', as writing 'x' may be mistaken by compiler for multiplication-->
-      <a class="close" aria-label="Close popup box" href="#">&times;
+            <a class="close" aria-label="Close popup box" href="#">&times;
       </a>
-      <!--Div for search feature-->
-      <div id="search-bar-popup">
-        <input type="text" id="search-input-popup" placeholder="Search...">
-        <a class="search-button-popup" href="#search-popup">
+            <!--Div for search feature-->
+            <div id="search-bar-popup">
+                <input type="text" id="search-input-popup" placeholder="Search...">
+                <a class="search-button-popup" href="#search-popup">
           <i class="icon-popup"></i>
         </a>
-      </div>
-    </div>
-  </div>
-
-  <!--Main section of page-->
-  <main>
-
-    <h1>CURRENT LINEUP</h1>
-
-    <article>
-
-        <header>
-          <h2>Latest Audi Models</h2>
-        </header>
-        <div id="audi-models">
-          <div class="audi-model-left">
-            <figure>
-              <img src="content/images/lineup-a1.jpg" aria-label="Image of Audi A1"
-              alt="Audi A1" title="Audi A1 model from £20,000">
-              <figcaption>
-                The A1 range is everything you would expect from an Audi.
-              </figcaption>
-            </figure>
-            <h2>Audi A1</h2>
-            <p>£20000</p>
-          </div>
-          <div class="audi-model-right">
-            <figure>
-            <img src="content/images/lineup-a3.jpg" aria-label="Image of Audi A3"
-            alt="Audi A3" title="Audi A3 model from £50,000">
-            <figcaption>
-              The A3 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi A3</h2>
-            <p>£25000</p>
-          </div>
-          <div class="audi-model-left">
-            <figure>
-            <img src="content/images/lineup-a4.jpg" aria-label="Image of Audi A4"
-            alt="Audi A4" title="Audi A4 model from £30,000">
-            <figcaption>
-              The A4 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi A4</h2>
-            <p>£30000</p>
-          </div>
-          <div class="audi-model-right">
-            <figure>
-            <img src="content/images/lineup-a5.jpg" aria-label="Image of Audi A5"
-            alt="Audi A5" title="Audi A5 model from £35,000">
-            <figcaption>
-              The A5 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi A5</h2>
-            <p>£35000</p>
-          </div>
-          <div class="audi-model-left">
-            <figure>
-            <img src="content/images/lineup-a6.jpg" aria-label="Image of Audi A6"
-            alt="Audi A6" title="Audi A6 model from £40,000">
-            <figcaption>
-              The A6 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi A6</h2>
-            <p>£40000</p>
-          </div>
-          <div class="audi-model-right">
-            <figure>
-            <img src="content/images/lineup-a7.jpg" aria-label="Image of Audi A7"
-            alt="Audi A7" title="Audi A7 model from £45,000">
-            <figcaption>
-              The A7 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi A7</h2>
-            <p>£45000</p>
-          </div>
-          <div class="audi-model-left">
-            <figure>
-            <img src="content/images/lineup-a8.jpg" aria-label="Image of Audi A8"
-            alt="Audi A8" title="Audi A8 model from £50,000">
-            <figcaption>
-              The A8 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi A8</h2>
-            <p>£50000</p>
-          </div>
-          <div class="audi-model-right">
-            <figure>
-            <img src="content/images/lineup-q5.jpg" aria-label="Image of Audi Q5"
-            alt="Audi Q5" title="Audi Q5 model from £30,000">
-            <figcaption>
-              The Q5 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi Q5</h2>
-            <p>£30000</p>
-          </div>
-          <div class="audi-model-left">
-            <figure>
-            <img src="content/images/lineup-q7.jpg" aria-label="Image of Audi Q7"
-            alt="Audi Q7" title="Audi Q7 model from £50,000">
-            <figcaption>
-              The Q7 range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi Q7</h2>
-            <p>£50000</p>
-          </div>
-          <div class="audi-model-right">
-            <figure>
-            <img src="content/images/lineup-tt.jpg" aria-label="Image of Audi TT"
-            alt="Audi TT" title="Audi TT model from £50,000">
-            <figcaption>
-              The TT range is everything you would expect from an Audi.
-            </figcaption>
-          </figure>
-            <h2>Audi TT</h2>
-            <p>£50000</p>
-          </div>
+            </div>
         </div>
-    </article>
+    </div>
 
-    <aside>
-      <header>
-        <h2>
-          Audi Flickr
-        </h2>
-      </header>
-      <form id="search-flickr">
-    <label for="flickr-query">Search Flickr: </label>
-    <input id="flickr-query" type="text" placeholder="Audi">
-    <input type="submit">
-  </form>
+    <!--Main section of page-->
+    <main>
 
-  <section id="flickr-content">
-    <header>
-      <h2>
-        Flickr Results
-      </h2>
-    </header>
-  </section>
+        <h1>CURRENT LINEUP</h1>
 
-    </aside>
+        <article>
 
-  </main>
+            <header>
+                <h2>Latest Audi Models</h2>
+            </header>
+            <div id="audi-models">
+                <div class="audi-model-left">
+                    <figure>
+                        <img src="content/images/lineup-a1.jpg" aria-label="Image of Audi A1" alt="Audi A1" title="Audi A1 model from £20,000">
+                        <figcaption>
+                            The A1 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi A1</h2>
+                    <p>£20000</p>
+                </div>
+                <div class="audi-model-right">
+                    <figure>
+                        <img src="content/images/lineup-a3.jpg" aria-label="Image of Audi A3" alt="Audi A3" title="Audi A3 model from £50,000">
+                        <figcaption>
+                            The A3 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi A3</h2>
+                    <p>£25000</p>
+                </div>
+                <div class="audi-model-left">
+                    <figure>
+                        <img src="content/images/lineup-a4.jpg" aria-label="Image of Audi A4" alt="Audi A4" title="Audi A4 model from £30,000">
+                        <figcaption>
+                            The A4 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi A4</h2>
+                    <p>£30000</p>
+                </div>
+                <div class="audi-model-right">
+                    <figure>
+                        <img src="content/images/lineup-a5.jpg" aria-label="Image of Audi A5" alt="Audi A5" title="Audi A5 model from £35,000">
+                        <figcaption>
+                            The A5 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi A5</h2>
+                    <p>£35000</p>
+                </div>
+                <div class="audi-model-left">
+                    <figure>
+                        <img src="content/images/lineup-a6.jpg" aria-label="Image of Audi A6" alt="Audi A6" title="Audi A6 model from £40,000">
+                        <figcaption>
+                            The A6 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi A6</h2>
+                    <p>£40000</p>
+                </div>
+                <div class="audi-model-right">
+                    <figure>
+                        <img src="content/images/lineup-a7.jpg" aria-label="Image of Audi A7" alt="Audi A7" title="Audi A7 model from £45,000">
+                        <figcaption>
+                            The A7 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi A7</h2>
+                    <p>£45000</p>
+                </div>
+                <div class="audi-model-left">
+                    <figure>
+                        <img src="content/images/lineup-a8.jpg" aria-label="Image of Audi A8" alt="Audi A8" title="Audi A8 model from £50,000">
+                        <figcaption>
+                            The A8 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi A8</h2>
+                    <p>£50000</p>
+                </div>
+                <div class="audi-model-right">
+                    <figure>
+                        <img src="content/images/lineup-q5.jpg" aria-label="Image of Audi Q5" alt="Audi Q5" title="Audi Q5 model from £30,000">
+                        <figcaption>
+                            The Q5 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi Q5</h2>
+                    <p>£30000</p>
+                </div>
+                <div class="audi-model-left">
+                    <figure>
+                        <img src="content/images/lineup-q7.jpg" aria-label="Image of Audi Q7" alt="Audi Q7" title="Audi Q7 model from £50,000">
+                        <figcaption>
+                            The Q7 range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi Q7</h2>
+                    <p>£50000</p>
+                </div>
+                <div class="audi-model-right">
+                    <figure>
+                        <img src="content/images/lineup-tt.jpg" aria-label="Image of Audi TT" alt="Audi TT" title="Audi TT model from £50,000">
+                        <figcaption>
+                            The TT range is everything you would expect from an Audi.
+                        </figcaption>
+                    </figure>
+                    <h2>Audi TT</h2>
+                    <p>£50000</p>
+                </div>
+            </div>
+        </article>
+
+        <aside>
+            <header>
+                <h2>
+                    Audi Flickr
+                </h2>
+            </header>
+            <form id="search-flickr">
+                <label for="flickr-query">Search Flickr: </label>
+                <input id="flickr-query" type="text" placeholder="Audi">
+                <input type="submit">
+            </form>
+
+            <section id="flickr-content">
+                <header>
+                    <h2>
+                        Flickr Results
+                    </h2>
+                </header>
+            </section>
+
+        </aside>
+
+    </main>
 
 
 
-  <!--Footer starts-->
-  <footer>
+    <!--Footer starts-->
+    <footer>
 
-    <div id="go-to-top">
-      <a href="#top-header">
+        <div id="go-to-top">
+            <a href="#top-header">
         <img src="content/images/arrow-top.png" alt="Arrow to top">
       </a>
-    </div>
+        </div>
 
-    <div id="copyright-text">
-    <small>&copy; Copyright 2017, Mohammed Sheikh</small>
-    </div>
+        <div id="copyright-text">
+            <small>&copy; Copyright 2017, Mohammed Sheikh</small>
+        </div>
 
-    <div id="sitemap">
-      <a class="sitemap-link" href="index.html">Home</a>
-      <a class="sitemap-link" href="history.html">History of Audi</a>
-      <a class="sitemap-link" href="gallery.html">Gallery</a>
-      <a class="sitemap-link" href="current-lineup.html">Current Lineup</a>
-      <a class="sitemap-link" href="the-future.html">The Future</a>
-    </div>
+        <div id="sitemap">
+            <a class="sitemap-link" href="index.html">Home</a>
+            <a class="sitemap-link" href="history.html">History of Audi</a>
+            <a class="sitemap-link" href="gallery.html">Gallery</a>
+            <a class="sitemap-link" href="current-lineup.html">Current Lineup</a>
+            <a class="sitemap-link" href="the-future.html">The Future</a>
+        </div>
 
-  </footer>
+    </footer>
 
-  <!--JavaScript file is being referenced here-->
-  <script src="js/scripts.js"></script>
+    <!--JavaScript file is being referenced here-->
+    <script src="js/scripts.js"></script>
 
-  </body>
+</body>
 
 </html>
