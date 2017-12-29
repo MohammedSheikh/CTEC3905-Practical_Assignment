@@ -420,6 +420,11 @@ form input {
   border-radius: 5px;
   font-size: 1em;
 }
+#flickr-content img {
+  margin: 5px auto;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header {
