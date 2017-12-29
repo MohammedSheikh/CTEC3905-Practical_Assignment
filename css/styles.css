@@ -425,6 +425,24 @@ form input {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
+#future-concepts {
+  background-color: #808080;
+}
+#future-concepts p {
+  text-align: center;
+}
+#future-concepts u {
+  color:#fff;
+  background-color: #000;
+}
+#future-concepts p:nth-child(odd) {
+    background-color: #c0c0c0;
+    color:#000;
+}
+#future-concepts p:nth-child(even) {
+    background-color: #fff;
+    color:#000;
+}
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header {
