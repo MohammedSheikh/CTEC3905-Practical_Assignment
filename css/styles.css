@@ -326,6 +326,7 @@ article {
 aside {
   background-color: #808080;
   width:100%;
+  border: 1px solid #fff;
 }
 #audi-models {
   display: flex;
@@ -394,6 +395,30 @@ figure:hover figcaption {
 }
 #go-to-top img:hover {
   content: url('../content/images/arrow-top-hover.png');
+}
+form {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+form label, form input {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+form label {
+  color:#fff;
+  margin-top: 5px;
+
+}
+form input {
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1em;
 }
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -593,7 +618,8 @@ figure:hover figcaption {
   }
   aside {
     overflow: auto;
-    width: 30%;
+    overflow-y:hidden;
+    width: 29%;
   }
 }
 /* END SECOND BREAKPOINT */
