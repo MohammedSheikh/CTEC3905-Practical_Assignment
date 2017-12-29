@@ -630,16 +630,8 @@ form input {
 }
 
 .timeline-block {
-   width: -webkit-calc(50% + 8px);
-   width: -moz-calc(50% + 8px);
    width: calc(50% + 8px);
-   display: -webkit-box;
-   display: -webkit-flex;
-   display: -moz-box;
    display: flex;
-   -webkit-box-pack: justify;
-   -webkit-justify-content: space-between;
-   -moz-box-pack: justify;
    justify-content: space-between;
    clear: both;
 }
@@ -650,7 +642,7 @@ form input {
 .timeline-block-left {
    float: left;
    direction: rtl
-}
+ }
 }
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
