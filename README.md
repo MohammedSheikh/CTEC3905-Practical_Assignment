@@ -54,8 +54,22 @@ I aim to have my website tested by friends/family so that I can improve it as be
 
 * http://wesbos.com/es6-block-scope-iife/
 
-### I used this W3C tutorial to help me to design an overlay feature for my search bar
+### I used this W3C tutorial to help me to design an overlay feature for my search bar:
 
 * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
 
-###
+### To solve the JS element append challenge, I used the official MDN documentation:
+
+* https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
+
+### To implement the slideshow on the 'Gallery' page, I used W3C Schools:
+
+* https://www.w3schools.com/w3css/w3css_slideshow.asp
+
+### I made use of Stack Overflow to create the CSS animations on 'The Future' page:
+
+* https://stackoverflow.com/questions/41461101/flip-a-3d-card-with-css
+
+### To create the timeline feature on the 'History' page, I used:
+
+* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline
