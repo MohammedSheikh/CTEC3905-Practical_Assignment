@@ -6,7 +6,7 @@ The website that I am creating is a fansite for Audi cars as I am a fan myself. 
 
 # Screen Designs
 
-## Please download the file to view the various developmental screen designs:
+## Please download the files to view the various developmental screen designs:
 
 [1. First-Design.pdf](https://github.com/MohammedSheikh/CTEC3905-Practical_Assignment/files/1593995/1.First-Design.pdf)
 
@@ -50,4 +50,12 @@ I aim to have my website tested by friends/family so that I can improve it as be
 
 # References and Inspirations
 
-Coming soon...
+### To understand IIFE's, I read this great tutorial:
+
+* http://wesbos.com/es6-block-scope-iife/
+
+### I used this W3C tutorial to help me to design an overlay feature for my search bar
+
+* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
+
+###
