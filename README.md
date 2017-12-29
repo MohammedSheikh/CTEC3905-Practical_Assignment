@@ -6,7 +6,7 @@ The website that I am creating is a fansite for Audi cars as I am a fan myself. 
 
 # Screen Designs
 
-Coming soon...
+[Doc 28 Dec 2017%2c 1310.pdf](https://github.com/MohammedSheikh/CTEC3905-Practical_Assignment/files/1593979/Doc.28.Dec.2017.2c.1310.pdf)
 
 # Site Diagram
 
