@@ -99,6 +99,7 @@
 
         <h1>CURRENT LINEUP</h1>
 
+        <!--Thie article contains the car models + their descriptionso-->
         <article>
 
             <header>
@@ -106,6 +107,7 @@
             </header>
             <div id="audi-models">
                 <div class="audi-model-left">
+                  <!--The figure tag contains the image and the figcaption that appears when user hovers over the image-->
                     <figure>
                         <img src="content/images/lineup-a1.jpg" aria-label="Image of Audi A1" alt="Audi A1" title="Audi A1 model from £20,000">
                         <figcaption>
@@ -208,18 +210,22 @@
             </div>
         </article>
 
+        <!--This <aside> element contains the Flickr API functionality-->
         <aside>
             <header>
                 <h2>
                     Audi Flickr
                 </h2>
             </header>
+            <!--Form that allows the Flickr API to be used to retrive and display images-->
             <form id="search-flickr">
                 <label for="flickr-query">Search Flickr: </label>
+                <!--Search bar-->
                 <input id="flickr-query" type="text" placeholder="Audi">
+                <!--Search button-->
                 <input type="submit">
             </form>
-
+            <!--This section contains the actual content that the Flickr API retrieves-->
             <section id="flickr-content">
                 <header>
                     <h2>
@@ -237,6 +243,7 @@
     <!--Footer starts-->
     <footer>
 
+        <!--Div that contains link that takes user to top of page-->
         <div id="go-to-top">
             <a href="#top-header">
         <img src="content/images/arrow-top.png" alt="Arrow to top">

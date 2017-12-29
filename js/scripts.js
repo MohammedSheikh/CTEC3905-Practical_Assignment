@@ -63,7 +63,7 @@ This IFFE function runs itself immediately*/
                 .then(function(data) {
                     let theData = "";
                     let tmp = data.photos.photo;
-                    //for ecwry item...
+                    //for item in object...
                     for (let key in tmp) {
                         //set the url
                         let url = `https://farm${tmp[key].farm}.staticflickr.com/${tmp[key].server}/${tmp[key].id}_${tmp[key].secret}_z.jpg`;
@@ -155,12 +155,14 @@ official code documentation*/
     //if there is a back arrow element, add event listener
     if (backArrow) {
         backArrow.addEventListener("click", function() {
+            //move backward in array
             plusDivs(-1)
         });
     }
     //if there is a forward arrow element, add event listener
     if (forwardArrow) {
         forwardArrow.addEventListener("click", function() {
+            //move forward in array
             plusDivs(1)
         });
     }

@@ -16,6 +16,139 @@ header {
   border-radius: 5px;
   margin-top: 5px;
 }
+/*Styles for the navigation menu*/
+nav {
+  display: none;
+  background-color: #808080;
+  text-align: center;
+}
+/*Styles for the navigation menu links*/
+nav a {
+  padding: 1em;
+  display: block;
+  text-align: center;
+}
+/*Default style for the navigation menu link*/
+nav a:link {
+  color: #fff;
+}
+/*This style applied to menu link if link has been visited*/
+nav a:visited {
+  color: #fff;
+}
+/*This style applied to menu link if user hovers over it*/
+nav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+/*This style applied to menu link if it is active*/
+nav a:active {
+  color: #fff;
+}
+/*This style applies to the 'main' of the web page*/
+main {
+  background-color: #808080;
+  margin-top: 5px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+main img {
+  width: 100%;
+}
+h1 {
+  color: #fff;
+}
+section {
+  width: 100%;
+  text-align: justify;
+}
+section p {
+  padding: 3px 8px;
+}
+video {
+  width: 100%;
+  height: 95%;
+}
+footer {
+  width: 100%;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+/*'Current Lineup' page*/
+article {
+  background-color: #808080;
+  width:100%;
+}
+aside {
+  background-color: #808080;
+  width:100%;
+  border: 1px solid #fff;
+}
+figure img {
+  margin-bottom: -4em;
+  display: block;
+  padding-bottom: 4px;
+}
+/* styles the figcaption element when the page first loads. The
+  `transition` property simply "prepares" the element for a style
+  transition - it does NOT trigger the transition.
+  `opacity` affects the WHOLE element - at `.78` text less is harsh when
+  visible. A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text
+  with a line-height of 1em nicely. For more, change the values.*/
+figcaption {
+  line-height: 1em;
+  padding: .25em;
+  transform: translateY(1em);
+  background: #000;
+  color:#fff;
+  opacity: 0;
+  transition: all .5s;
+  text-align: justify;
+}
+/*These styles are applied to the `figcaption` element when hovering
+  over the`figure` element. The `transition` property on `figcaption`
+  above is then applied to `all` these hover styles, over 0.5 seconds.*/
+figure:hover figcaption {
+  transform: translateY(0em);
+  opacity: 1;
+}
+form {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+form label, form input {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+form label {
+  color:#fff;
+  margin-top: 5px;
+}
+form input {
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1em;
+}
 /*styles for site logo div*/
 #logo {
   height: 50%;
@@ -71,35 +204,6 @@ header {
 }
 .display-menu {
   display: block;
-}
-/*Styles for the navigation menu*/
-nav {
-  display: none;
-  background-color: #808080;
-  text-align: center;
-}
-/*Styles for the navigation menu links*/
-nav a {
-  padding: 1em;
-  display: block;
-  text-align: center;
-}
-/*Default style for the navigation menu link*/
-nav a:link {
-  color: #fff;
-}
-/*This style applied to menu link if link has been visited*/
-nav a:visited {
-  color: #fff;
-}
-/*This style applied to menu link if user hovers over it*/
-nav a:hover {
-  background-color: #000;
-  color: #fff;
-}
-/*This style applied to menu link if it is active*/
-nav a:active {
-  color: #fff;
 }
 #social-media {
   display: flex;
@@ -211,30 +315,6 @@ nav a:active {
   width: 20px;
   margin-right: 2px;
 }
-/*This style applies to the 'main' of the web page*/
-main {
-  background-color: #808080;
-  margin-top: 5px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 2px solid #fff;
-  border-radius: 5px;
-}
-main img {
-  width: 100%;
-}
-h1 {
-  color: #fff;
-}
-section {
-  width: 100%;
-  text-align: justify;
-}
-section p {
-  padding: 3px 8px;
-}
 /*Div that holds the map feature*/
 #map {
   width: 100%;
@@ -250,22 +330,6 @@ section p {
   justify-content: space-around;
   flex-direction: column;
 }
-video {
-  width: 100%;
-  height: 95%;
-}
-footer {
-  width: 100%;
-  background-color: #000;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: #fff;
-}
 #sitemap {
   background-color: #808080;
   padding-top:10px;
@@ -276,9 +340,6 @@ footer {
   text-decoration:underline;
   color:#fff;
   font-size:1em;
-}
-a {
-  text-decoration: none;
 }
 /*Gallery page styles*/
 #audi-factories {
@@ -321,16 +382,6 @@ a {
   right:0;
   bottom:50%;
 }
-/*'Current Lineup' page*/
-article {
-  background-color: #808080;
-  width:100%;
-}
-aside {
-  background-color: #808080;
-  width:100%;
-  border: 1px solid #fff;
-}
 #audi-models {
   display: flex;
   flex-direction: column;
@@ -358,34 +409,6 @@ aside {
   margin-right: auto;
   margin-top: 0px;
 }
-figure img {
-  margin-bottom: -4em;
-  display: block;
-  padding-bottom: 4px;
-}
-/* styles the figcaption element when the page first loads. The
-  `transition` property simply "prepares" the element for a style
-  transition - it does NOT trigger the transition.
-  `opacity` affects the WHOLE element - at `.78` text less is harsh when
-  visible. A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text
-  with a line-height of 1em nicely. For more, change the values.*/
-figcaption {
-  line-height: 1em;
-  padding: .25em;
-  transform: translateY(1em);
-  background: #000;
-  color:#fff;
-  opacity: 0;
-  transition: all .5s;
-  text-align: justify;
-}
-/*These styles are applied to the `figcaption` element when hovering
-  over the`figure` element. The `transition` property on `figcaption`
-  above is then applied to `all` these hover styles, over 0.5 seconds.*/
-figure:hover figcaption {
-  transform: translateY(0em);
-  opacity: 1;
-}
 #go-to-top {
   text-align: center;
   margin-left: auto;
@@ -399,29 +422,6 @@ figure:hover figcaption {
 }
 #go-to-top img:hover {
   content: url('../content/images/arrow-top-hover.png');
-}
-form {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: column;
-}
-form label, form input {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width:40%;
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
-form label {
-  color:#fff;
-  margin-top: 5px;
-}
-form input {
-  border: 2px solid #000;
-  border-radius: 5px;
-  font-size: 1em;
 }
 #flickr-content img {
   margin: 5px auto;
@@ -510,6 +510,27 @@ following styles*/
   header {
     width: 95%;
   }
+  nav {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav a {
+    display: inline-block;
+  	width:13%;
+    margin-left: 0px;
+    margin-right: 0px;
+  	font-size:13px;
+  	background-color:transparent;
+  }
+  main {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    width: 95%;
+  }
   #logo {
     padding-right: 15px;
   }
@@ -534,26 +555,8 @@ following styles*/
 	  border: 2px solid #808080;
 	  border-radius: 5px;
   }
-  nav {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  nav a {
-    display: inline-block;
-  	width:13%;
-    margin-left: 0px;
-    margin-right: 0px;
-  	font-size:13px;
-  	background-color:transparent;
-  }
   #search-popup {
     display: none;
-  }
-  main {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
   }
   #first-video {
   	height: 380px;
@@ -562,9 +565,6 @@ following styles*/
   #second-video {
   	height: 380px;
     width: 100%;
-  }
-  footer {
-    width: 95%;
   }
   #sitemap a {
     display: inline;
@@ -597,14 +597,14 @@ following styles*/
 
 /*Added extra media query to solve navigation sizing issue*/
 @media screen and (min-width: 845px) {
-  #search-popup {
-    display: none;
-  }
   nav a {
     width:15%;
     margin-left: 0px;
     margin-right: 0px;
     font-size:17px;
+  }
+  #search-popup {
+    display: none;
   }
   #sitemap a {
     font-size: 1em;
@@ -645,14 +645,6 @@ following styles*/
   header {
     width: 90%;
   }
-  #search {
-  	width:50%;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  #main-menu {
-    display: none;
-  }
   nav {
     display: block;
     width: 90%;
@@ -665,6 +657,29 @@ following styles*/
     margin-right: 0px;
     font-size:19px;
     background-color:transparent;
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    width: 90%;
+  }
+  article {
+    float: left;
+    width:70%;
+  }
+  aside {
+    overflow: auto;
+    overflow-y:hidden;
+    width: 29%;
+  }
+  #search {
+  	width:50%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #main-menu {
+    display: none;
   }
   #social-media {
 	  display: flex;
@@ -689,9 +704,6 @@ following styles*/
   #search-popup {
     display: none;
   }
-  main {
-    width: 90%;
-  }
   #videos {
 	  flex-direction: row;
   }
@@ -705,9 +717,6 @@ following styles*/
     width: 100%;
     padding: 5px;
   }
-  footer {
-    width: 90%;
-  }
   /*slideshow styles*/
   .arrow-left, .arrow-right {
     font-size: 4em;
@@ -720,15 +729,6 @@ following styles*/
   }
   .audi-model-right {
     float: left;
-  }
-  article {
-    float: left;
-    width:70%;
-  }
-  aside {
-    overflow: auto;
-    overflow-y:hidden;
-    width: 29%;
   }
 }
 /* END SECOND BREAKPOINT */
