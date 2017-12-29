@@ -6,13 +6,21 @@ The website that I am creating is a fansite for Audi cars as I am a fan myself. 
 
 # Screen Designs
 
-[Doc 28 Dec 2017%2c 1310.pdf](https://github.com/MohammedSheikh/CTEC3905-Practical_Assignment/files/1593979/Doc.28.Dec.2017.2c.1310.pdf)
+## Please download the file to view the various developmental screen designs:
 
-# Site Diagram
+[1. First-Design.pdf](https://github.com/MohammedSheikh/CTEC3905-Practical_Assignment/files/1593995/1.First-Design.pdf)
+
+[2. Second-Design.pdf](https://github.com/MohammedSheikh/CTEC3905-Practical_Assignment/files/1593996/2.Second-Design.pdf)
+
+[3. Third-Design.pdf](https://github.com/MohammedSheikh/CTEC3905-Practical_Assignment/files/1593998/3.Third-Design.pdf)
+
+[4. Wireframe_Mobile.pptx](https://github.com/MohammedSheikh/CTEC3905-Practical_Assignment/files/1593999/4.Wireframe_Mobile.pptx)
+
+# Design Journey
 
 Coming soon...
 
-# Design Journey
+# Site Diagram
 
 Coming soon...
 
