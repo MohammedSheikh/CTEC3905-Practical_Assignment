@@ -29,6 +29,43 @@ This IFFE function runs itself immediately*/
 
 })();
 
+(function(){
+
+  let queryBox = document.getElementById("flickrQuery");
+  let searchForm = document.getElementById("searchForm");
+  let demoJSON = document.getElementById("demo");
+
+  let baseURL = "https://api.flickr.com/services/rest/? \
+                method=flickr.photos.search& \
+                api_key=fc23f7e0b30130ea4e3bd09af8b86643& \
+                format=json& \
+                per_page=10& \
+                nojsoncallback=1& \
+                tags=";
+
+  searchForm.addEventListener("submit", function(ev){
+    let url = baseURL + queryBox.value;
+    let request = new Request(url);
+    fetch(request)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function(data) {
+        let theData = "";
+        let tmp = data.photos.photo;
+        // console.log(data);
+        for(let key in tmp) {
+          let url = `https://farm${tmp[key].farm}.staticflickr.com/${tmp[key].server}/${tmp[key].id}_${tmp[key].secret}_q.jpg`;
+          theData += `<img src="${url}" alt="${tmp[key].title}">`;
+        }
+        demoJSON.innerHTML = theData;
+      });
+    queryBox.value = "";
+    ev.preventDefault();
+  }, false);
+
+}());
+
 /*This IIFE is used to move the social media div from one parent div to another
 when screen size changes. In the desktop view, the div will move from the nav
 to the header dynamically, code adapated from Mozilla Developer Network
@@ -135,7 +172,6 @@ function initMap() {
     content: "<b>Audi UK Headquarters</b> <p> Yeomans Drive, \
      Blakelands <p> MILTON KEYNES <p> MK14 5AN"
   });
-
   locationInfo.open(audiMap, markerAudi);
 
   /*Here I have added a DOM listener that 'listens' when window is resized.

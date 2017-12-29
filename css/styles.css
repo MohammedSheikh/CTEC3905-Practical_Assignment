@@ -395,6 +395,10 @@ figure:hover figcaption {
 #go-to-top img:hover {
   content: url('../content/images/arrow-top-hover.png');
 }
+#demo {
+  
+
+}
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header {
