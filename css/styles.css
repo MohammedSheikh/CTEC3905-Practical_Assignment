@@ -395,9 +395,12 @@ figure:hover figcaption {
 #go-to-top img:hover {
   content: url('../content/images/arrow-top-hover.png');
 }
-#demo {
-  
-
+form label, form input {
+  text-align: center;
+  width:100%;
+}
+form label {
+  color:#fff;
 }
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {

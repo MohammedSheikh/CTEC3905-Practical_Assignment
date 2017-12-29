@@ -31,9 +31,9 @@ This IFFE function runs itself immediately*/
 
 (function(){
 
-  let queryBox = document.getElementById("flickrQuery");
-  let searchForm = document.getElementById("searchForm");
-  let demoJSON = document.getElementById("demo");
+  let queryBox = document.getElementById("flickr-query");
+  let searchForm = document.getElementById("search-flickr");
+  let demoJSON = document.getElementById("flickr-content");
 
   let baseURL = "https://api.flickr.com/services/rest/? \
                 method=flickr.photos.search& \
