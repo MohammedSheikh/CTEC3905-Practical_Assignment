@@ -32,17 +32,63 @@ I also created another Wireframe on PowerPoint (Wireframe_Mobile.pptx) in which 
 
 ![site-diagram](https://user-images.githubusercontent.com/16736330/34449652-8eef0586-ecf2-11e7-8086-f602ff563e31.png)
 
-# Development Process
+# Development Process and Issues Solved
 
-Coming soon...
+08/12... so far, dilemma whether to use flexbox or grid. though of using grid initially but since it is releatively new comparerd to flexbox, it has some browser compatibility issues. since no time to make sure exact which issues, i  go with flexbox instead.
 
-## Justifications
+i had another issue where the image logo used wasnt scaling well, but i fixed by setting width to 100% of parent div so that whatever the div is, it will fit, instead of going too wide.
 
-Coming soon...
+had many ideas, made list of what type of content to include looking at car websites, as my deve preocess went, i ended up deleting a couple of pages as i though no need to have entire page for just that
 
-## Issues Solved
+Used branch to test maps, APIs, etc
 
-Coming soon...
+http://wesbos.com/es6-block-scope-iife/   .... read this to undertsnad IFFE
+
+https://storage.googleapis.com/gtspirit/uploads/2017/04/Audi-R8-V10-Audi-Sport-Edition-11.jpg   ... audi r8 homepage banner
+
+10/12
+ embedding google maps api, had issues with puting in dsperate file but solv=ed by async defer and changing order of script. created 'feature branch' to test on it and it wont affect master, i will i ncorprate later if good, had issues with error that said 'api not activated' , turns out i had to go ot API manager and 'enable' the API key on google account
+
+soon..talk about keyframes or css erros and how i solved it.
+
+11/12 .. i used stack  overflow (https://stackoverflow.com/questions/47749243/html-custom-not-font-awesome-icon-class-not-working/47751282#47751282) to solve issue regarding non-font awesome icon image for search bar, I am undedstanfing flexbox- i like it, very easy to use model
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade   -  image hover overlay social media icons adapted from W3c
+
+12/12: fixed big probelm with search bar
+somneone said social media should be at top, more accessible. thats why i did new branch, took time to setup
+
+13/12: researtched a lot appendNode- i wanted to move element  from one to another- also researched JS media query...https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
+
+
+14/12: Rsearched IIFE...http://gregfranko.com/blog/i-love-my-iife/, only one js- reduce no. of requests mae to server...It basically seals the code inside the function so that other libraries don't interfere with it. It's similar to creating a namespace in compiled languages.
+IIFE is a function expression that automatically invokes after completion of the definition
+
+15/12: lot of reaesarching append and checking if stuff changes when JS media query changes, tested by cosole.log, understood IIFE's
+
+16/12: got append working, resolved conflict betrween branches due to lots of changes-learning a lot,
+
+17/12:  + social media, considered video tag stuff, had to add breakpoint between large and medium to make nav fit..
+
+18/12:made few changes (alt tags etc) cos ofa ccessibility checker (removed decortiave image alt tags)....https://www.w3.org/WAI/tutorials/images/decorative/     ...the w3c and accesiblity checker websites saying opposite things-in the end i left it so it valifates....modal search box
+
+24/12: finished homepage, sorted search bar
+
+25/12: noticed bug where social media was moving when clicking on homepage link, spotted that i left 'query' as 'mq', added ARIA
+
+26/12 : talk abpout consistent color schemen, grey ,white, black...  looked at slideshows...https://www.w3schools.com/w3css/w3css_slideshow.asp
+
+27:12: sorted slideshow with event listener errors. and then current lineup page
+
+28/12: sorted bug where the search bar was not aloigned on mobile, flickr api, go to top
+
+
+Flickr didnt work!, then did normal search flickr API using labwork
+
+29/12: nth child , 3d effect...https://stackoverflow.com/questions/41461101/flip-a-3d-card-with-css
+...https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline  - timeline
+
+
 
 # Usability and Information Architecture
 
