@@ -22,7 +22,7 @@ I initially sketched out my ideas with pen and paper to map out a layout plan of
 
 I then created another design draft (Second-Design.pdf) in which I evolved the design by including more details such as social media links and navigation menus.
 
-In my third design (Third-Design.pdf), where I was able to consolidate many ideas into one- this roughly represented my final design. I included how the search bar would pop out and how the social media icons would appear at different screen sizes. One of the things I changed from my second to third design was the position of the menu from the left hand side to the right, in mobile view. Studies show that roughly 88% of the world is left handed (source:Google), therefore I thought that since it is more likely that a right-handed person would use the website, I put the menu on the right hand side.
+In my third design (Third-Design.pdf), where I was able to consolidate many ideas into one- this roughly represented my final design. I included how the search bar would pop out and how the social media icons would appear at different screen sizes. One of the things I changed from my second to third design was the position of the menu from the left hand side to the right, in mobile view. Studies show that roughly 88% of the world is right handed (source:Google), therefore I thought that since it is more likely that a right-handed person would use the website, I put the menu on the right hand side.
 
 I also created another Wireframe on PowerPoint (Wireframe_Mobile.pptx) in which I created another neater design to complement my paper designs.
 
